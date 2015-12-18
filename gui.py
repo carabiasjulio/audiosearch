@@ -38,7 +38,14 @@ class SearchFrame(wx.Frame):
         r = (np.array([random_audio_file() for i in range(nfiles)]), np.random.rand(nfiles))
         rpanel = RankPanel(self, r)
         sizer.Add(qpanel)
-        sizer.Add(rpanel)
+
+        lowerSizer = wx.BoxSizer()
+        yesPanel = FeedbackPanel(self, True)
+        noPanel = FeedbackPanel(self, False)
+        lowerSizer.Add(yesPanel)
+        lowerSizer.Add(rpanel)
+        lowerSizer.Add(noPanel)
+        sizer.Add(lowerSizer)
         self.SetSizerAndFit(sizer)
 
 class QueryPanel(wx.Panel):
@@ -84,8 +91,22 @@ class RankPanel(wx.Panel):
         self.Fit()
 
 class FeedbackPanel(wx.Panel):
-    def __init__(self, parent):
+    def __init__(self, parent, c):
+        ''' c: boolean indicating whether user accepts or rejects samples shown in the panel'''
         wx.Panel.__init__(self, parent)
+        self.samples = []
+        self.sizer = wx.BoxSizer(wx.VERTICAL)
+        self.SetSizer(self.sizer)
+        if c:
+            label = wx.StaticText(self, label='Yes!')
+        else:
+            label = wx.StaticText(self, label='NOOO')
+        self.sizer.Add(label)
+
+    def updateView(self):
+        for s in self.samples:
+           self.sizer.Add(RemovableSampleItem(s,self))
+        self.Fit()
 
 class SampleItem(wx.Panel):
     ''' A mini sample player that features play/stop control, plus self removal'''
