@@ -55,7 +55,7 @@ class QueryPanel(wx.Panel):
         fpick = wx.FileDialog(self,'choose query example','','',wildcard='WAV files (*.wav)|*.wav|all files (*)|*',style= wx.FD_OPEN)
         if fpick.ShowModal() == wx.ID_OK:
             f = fpick.GetPath()
-            self.sizer.Add(SampleItem(f, self))
+            self.sizer.Add(RemovableSampleItem(f, self))
             self.Fit()
             self.GetParent().Fit()
         
@@ -80,7 +80,7 @@ class RankPanel(wx.Panel):
         print len(fnames[sorting])
         fshow = fnames[sorting][:batchsize]
         for f in fshow:
-            self.sizer.Add(FeedbackSampleItem(f, self))
+            self.sizer.Add(ProposedSampleItem(f, self))
         self.Fit()
 
 class FeedbackPanel(wx.Panel):
@@ -98,31 +98,14 @@ class SampleItem(wx.Panel):
         
         label = wx.StaticText(self, label= os.path.split(sampleFile)[-1])
       
-        
-        #self.removeButton = wx.BitmapButton(self, bitmap = wx.Bitmap('remove.png'))
-        self.removeButton = wx.Button(self, label = 'X')
-        self.removeButton.Bind(wx.EVT_BUTTON, self.OnRemove)
-        
         sizer.Add(self.playButton)
         sizer.Add(label)
-        sizer.Add(self.removeButton)
         self.SetSizerAndFit(sizer)
         self.sizer = sizer
 
         self.sampleFile = sampleFile
         self.playing = False 
-        
-    def OnRemove(self, event):
-        p = self.GetParent()
-        self.Destroy()
-        p.Fit()     # update panel size
 
-    def OnMediaStop(self, event):
-        print 'stopped!'
-        btn = self.playButton
-        btn.SetBitmapLabel(bitmap = wx.Bitmap('play.png'))
-        self.playing = False
-    
     def OnPlay(self, event):
         if self.playing:
             print "stopping"
@@ -136,54 +119,54 @@ class SampleItem(wx.Panel):
             sd.play(data, fs, do_after = self.AfterPlay)    # new thread, with 
             self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('stop.png'))
             self.playing = True
-            #sd.wait()
-            #self.AfterPlay()
 
     def AfterPlay(self):
         self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('play.png'))
         self.playing = False        
 
        
-class ProposedSample(SampleItem):
+class RemovableSampleItem(SampleItem):
+    """ SampleItem that can be removed """
     def __init__(self, sampleFile, parent):
         SampleItem.__init__(self, sampleFile, parent)
+        sizer = self.sizer
+
+        removeButton = wx.Button(self, label = 'X')
+        removeButton.Bind(wx.EVT_BUTTON, self.OnRemove)
+        
+        sizer.Add(removeButton)
+        self.Fit()
+
+    def OnRemove(self, event):
+        p = self.GetParent()
+        self.Destroy()
+        p.Fit()     # update panel size
+
+class ProposedSampleItem(SampleItem):
+    def __init__(self, sampleFile, parent):
+        SampleItem.__init__(self, sampleFile, parent)
+        sizer = self.sizer
+
         yesButton = wx.BitmapButton(self, bitmap=wx.Bitmap('yes.png'))
+        yesButton.Bind(wx.EVT_BUTTON, self.OnYes)
         noButton = wx.BitmapButton(self, bitmap=wx.Bitmap('no.png'))
+        noButton.Bind(wx.EVT_BUTTON, self.OnNo)
         bsizer = wx.BoxSizer()
         bsizer.Add(yesButton)
         bsizer.Add(noButton)
         self.sizer.Add(bsizer)
-        self.Fit()
-        
-class FeedbackSampleItem(SampleItem):
-    """ Sample bar with label control"""
-    def __init__(self, sampleFile, parent):
-        SampleItem.__init__(self, sampleFile, parent)
-        rbsizer = wx.BoxSizer()
-        rb1 = wx.RadioButton(self, label='yes', style=wx.RB_GROUP)
-        rb2 = wx.RadioButton(self, label='no')
-        rb3 = wx.RadioButton(self, label='unknown')
-        rbsizer.Add(rb1)
-        rbsizer.Add(rb2)
-        rbsizer.Add(rb3)
-        self.sizer.Add(rbsizer, flag=wx.EXPAND)
         self.SetSizerAndFit(self.sizer)
-        
-        rb1.Bind(wx.EVT_RADIOBUTTON, self.OnYes)
-        rb2.Bind(wx.EVT_RADIOBUTTON, self.OnNo)
-        rb3.Bind(wx.EVT_RADIOBUTTON, self.OnUnknown)
-        
-    def OnYes(self, event):
-        # TODO: update model
-        pass
-    def OnNo(self, event):
-        # TODO: update model
-        pass
-    def OnUnknown(self, event):
-        # TODO: update model
-        pass
-       
 
+    def OnYes(self, event):
+        print "accepted:", self.sampleFile
+        # TODO: update feedback panel
+        self.Destroy()
+
+    def OnNo(self, event):
+        print "rejected:", self.sampleFile
+        #TODO: update feedback
+        self.Destroy()
+        
 class TestApp(wx.App):    
     def OnInit(self):
         w = SearchFrame()
