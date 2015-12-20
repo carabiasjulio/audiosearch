@@ -13,8 +13,17 @@ import spectrogram
 
 data_dir = '/home/mzhan/audiosearch/data/UrbanSound8K/audio' 
 metadata_path = '/home/mzhan/audiosearch/data/UrbanSound8K/metadata/UrbanSound8K_by_fold.csv'
-feature_path = '/home/mzhan/audiosearch/data/UrbanSound8K/features2.npy'
-N = 8732   # number of library samples
+X_path = '/home/mzhan/audiosearch/X.npy'
+fnames_path = '/home/mzhan/audiosearch/data/UrbanSound8K/fnames.csv'
+folds_path = '/home/mzhan/audiosearch/data/UrbanSound8K/folds.csv'
+
+FNAMES = np.loadtxt(fnames_path, delimiter=',', dtype=str)
+FOLDS = np.loadtxt(folds_path, delimiter=',')
+LIBSAMPLE_PATHS = np.array([os.path.join(data_dir, 'fold'+str(fold), fname) for (fold, fname) in zip(FOLDS, FNAMES)], dtype=str)
+
+# number of library samples (=8732)
+N = len(FNAMES)
+X = np.load(X_path)
 
 def get_libsample(n):
     ''' Get the n-th library sample, as file name string '''
@@ -90,3 +99,6 @@ def waveToLogSpec(w, fs):
     S = spectrogram.stft(resampled, frameSize)
     logS = np.log(np.abs(S))
     return logS
+
+
+

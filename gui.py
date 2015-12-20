@@ -1,79 +1,96 @@
 from utils import *
-import wx
-from wx import media as media
 
+import wx
 import soundfile as sf
 import sounddevice2 as sd
 import numpy as np
 
-
-class SampleFrame(wx.Frame):
-    def __init__(self):
-        wx.Frame.__init__(self, None, title='Test')
-        
-        
-        samplePanel = wx.ScrolledWindow(self, style=wx.TAB_TRAVERSAL)       
-        psizer = wx.BoxSizer(wx.VERTICAL) 
-        # clamped input       
-        psizer.Add(FeedbackSampleItem(random_audio_file(), samplePanel))
-        psizer.Add(FeedbackSampleItem(random_audio_file(), samplePanel))
-        psizer.Add(FeedbackSampleItem(random_audio_file(), samplePanel))
-        
-        samplePanel.SetSizer(psizer)
-        samplePanel.EnableScrolling(True, True)
-        samplePanel.SetScrollbars(1,1,1,1)
-        
-        sizer = wx.BoxSizer()
-        sizer.Add(samplePanel, 1, wx.EXPAND)
-        self.SetSizer(sizer)
-    
+from model import SearchModel
 
 class SearchFrame(wx.Frame):
-    def __init__(self):
+    def __init__(self, model):
+        """ model: SearchModel object """
+        self.model = model
+
         wx.Frame.__init__(self, None, title='Search Audio by Example', size=(800,800))
         self.Center()
-        sizer = wx.BoxSizer(wx.VERTICAL)
-        qpanel = QueryPanel(self)
-        nfiles = 100
-        r = (np.array([random_audio_file() for i in range(nfiles)]), np.random.rand(nfiles))
-        rpanel = RankPanel(self, r)
-        sizer.Add(qpanel)
+        
+        # query panel
+        qpanel = QueryPanel(self, model)
+        
+        goButton = wx.Button(qpanel, label='GO')
+        qpanel.Bind(wx.EVT_BUTTON, self.OnGo)
+        qpanel.sizer.Add(goButton)
 
+
+        # ranking (results) panel
+#        nfiles = 100
+#        r = (np.array([random_audio_file() for i in range(nfiles)]), np.random.rand(nfiles))
+        rpanel = RankPanel(self, model)
+        rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback)
+
+        # feedback panels 
+
+        yesLabel = wx.StaticText(self, label='Yes!')
+        noLabel = wx.StaticText(self, label='NOOO')
+
+        yesPanel = FeedbackPanel(self, model, True)
+        noPanel = FeedbackPanel(self, model, False)
+        self.yesPanel = yesPanel
+        self.noPanel = noPanel
+
+        # layout
         lowerSizer = wx.BoxSizer()
-        yesPanel = FeedbackPanel(self, True)
-        noPanel = FeedbackPanel(self, False)
         lowerSizer.Add(yesPanel)
         lowerSizer.Add(rpanel)
         lowerSizer.Add(noPanel)
+
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        sizer.Add(qpanel)
         sizer.Add(lowerSizer)
+
         self.SetSizerAndFit(sizer)
 
+    def OnGo(self, event):
+        self.model.update_scores()
+    
+    def OnFeedback(self, event):
+        self.yesPanel.updateView()
+        self.noPanel.updateView()
+        event.GetEventObject().GetParent().Destroy()   #TODO: better handling
+        self.Fit()
+
+
 class QueryPanel(wx.Panel):
-    def __init__(self, parent):
+    def __init__(self, parent, model):
 	wx.Panel.__init__(self, parent)
+        self.model = model
 	sizer = wx.BoxSizer()
         uploadButton = wx.Button(label='upload', parent=self)
-        sizer.Add(uploadButton)
-        self.SetSizer(sizer)
-        self.sizer = sizer
         uploadButton.Bind(wx.EVT_BUTTON, self.OnUpload)
+        sizer.Add(uploadButton)
+
+        self.sizer = sizer
+        self.SetSizer(sizer)
 
     def OnUpload(self, event):
         fpick = wx.FileDialog(self,'choose query example','','',wildcard='WAV files (*.wav)|*.wav|all files (*)|*',style= wx.FD_OPEN)
         if fpick.ShowModal() == wx.ID_OK:
             f = fpick.GetPath()
-            self.sizer.Add(RemovableSampleItem(f, self))
+            self.sizer.Add(ExampleSampleItem(self, self.model, f))
             self.Fit()
             self.GetParent().Fit()
-        
+            # update model
+            self.model.add_example(f)
+
 class RankPanel(wx.Panel):
-    def __init__(self, parent, ranking):
+    def __init__(self, parent, model):
         """ rankings: tuple (fnames, scores) where fnames is a numpy array of strings and scores is a numpy array of numeric values """
+        self.model = model
         wx.Panel.__init__(self, parent)
         sizer = wx.BoxSizer(wx.VERTICAL)
         self.sizer = sizer
         self.SetSizer(sizer)
-        self.ranking = ranking
         self.showRanking()
 
     def updateRanking(self, newRanking):
@@ -82,37 +99,44 @@ class RankPanel(wx.Panel):
 
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
-        fnames, scores = self.ranking
+        scores = self.model.scores
         sorting = np.argsort(scores)
-        print len(fnames[sorting])
-        fshow = fnames[sorting][:batchsize]
-        for f in fshow:
-            self.sizer.Add(ProposedSampleItem(f, self))
+        print sorting[:batchsize]
+        for f_ind in sorting[:batchsize]:
+            f = get_libsample(f_ind)
+            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind))
         self.Fit()
 
 class FeedbackPanel(wx.Panel):
-    def __init__(self, parent, c):
-        ''' c: boolean indicating whether user accepts or rejects samples shown in the panel'''
+    def __init__(self, parent, model, class_label):
+        ''' class_label: boolean indicating whether user accepts or rejects samples shown in the panel'''
+        self.model = model
+        self.class_label = class_label
         wx.Panel.__init__(self, parent)
-        self.samples = []
         self.sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.sizer)
-        if c:
+        if class_label:
             label = wx.StaticText(self, label='Yes!')
         else:
             label = wx.StaticText(self, label='NOOO')
         self.sizer.Add(label)
+        self.ssizer = wx.BoxSizer(wx.VERTICAL)
+        self.sizer.Add(self.ssizer)
 
     def updateView(self):
-        for s in self.samples:
-           self.sizer.Add(RemovableSampleItem(s,self))
+        print 'updating feedback list'
+        self.ssizer.DeleteWindows()
+        for s_ind in self.model.feedback[self.class_label]:
+           self.ssizer.Add(FeedbackSampleItem(self, self.model, get_libsample(s_ind), s_ind, self.class_label))
+        self.sizer.Layout()
         self.Fit()
 
 class SampleItem(wx.Panel):
     ''' A mini sample player that features play/stop control, plus self removal'''
-    def __init__(self, sampleFile, parent):
+    def __init__(self, parent, model, sampleFile):
         wx.Panel.__init__(self, parent)
         sizer = wx.BoxSizer()
+        self.model = model
 
         self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('play.png'))   #TODO: shrink button size
         self.playButton.Bind(wx.EVT_BUTTON, self.OnPlay)
@@ -148,25 +172,45 @@ class SampleItem(wx.Panel):
        
 class RemovableSampleItem(SampleItem):
     """ SampleItem that can be removed """
-    def __init__(self, sampleFile, parent):
-        SampleItem.__init__(self, sampleFile, parent)
+    def __init__(self, parent, model, sampleFile):
+        SampleItem.__init__(self, parent, model, sampleFile)
         sizer = self.sizer
 
         removeButton = wx.Button(self, label = 'X')
         removeButton.Bind(wx.EVT_BUTTON, self.OnRemove)
         
         sizer.Add(removeButton)
-        self.Fit()
+        self.SetSizerAndFit(sizer)
+#        self.Fit()
 
     def OnRemove(self, event):
         p = self.GetParent()
-        self.Destroy()
         p.Fit()     # update panel size
+        self.updateModel()
+        self.Destroy()
+
+    def updateModel(self):
+        pass
+
+
+class ExampleSampleItem(RemovableSampleItem):
+    def updateModel(self):
+        self.model.remove_example(self.sampleFile)
+
+class FeedbackSampleItem(RemovableSampleItem):
+    def __init__(self, parent, model, sampleFile, sample_index, class_label):
+        RemovableSampleItem.__init__(self, parent, model, sampleFile)
+        self.sample_index = sample_index
+        self.class_label = class_label
+
+    def updateModel(self):
+        self.model.remove_feedback(self.class_label, self.sample_index)
 
 class ProposedSampleItem(SampleItem):
-    def __init__(self, sampleFile, parent):
-        SampleItem.__init__(self, sampleFile, parent)
+    def __init__(self, parent, model, sampleFile, s_ind):
+        SampleItem.__init__(self, parent, model, sampleFile)
         sizer = self.sizer
+        self.sample_index = s_ind
 
         yesButton = wx.BitmapButton(self, bitmap=wx.Bitmap('yes.png'))
         yesButton.Bind(wx.EVT_BUTTON, self.OnYes)
@@ -180,17 +224,17 @@ class ProposedSampleItem(SampleItem):
 
     def OnYes(self, event):
         print "accepted:", self.sampleFile
-        # TODO: update feedback panel
-        self.Destroy()
+        self.model.add_feedback(True, self.sample_index)
+        event.Skip()
 
     def OnNo(self, event):
         print "rejected:", self.sampleFile
-        #TODO: update feedback
-        self.Destroy()
+        self.model.add_feedback(False, self.sample_index)
+        event.Skip()
         
 class TestApp(wx.App):    
     def OnInit(self):
-        w = SearchFrame()
+        w = SearchFrame(SearchModel())
         w.Show()
         self.SetTopWindow(w)
         return True
