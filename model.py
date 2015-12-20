@@ -11,7 +11,7 @@ class SearchModel(object):
         N,D = X.shape
         self.N = N
         self.D = D
-        self.scores = np.zeros((N,))
+        self.scores = np.random.rand(N)     # random score upon start (thus user sees random samples at first)
         self.feedback = ([],[])           # (indices_true, indices_false)  
         self.examples = np.zeros((0,D))    # never delete loaded examples; should use database in practice 
         self.example_files = []
@@ -49,10 +49,10 @@ class SearchModel(object):
         print 'feedback inds', I0, I1
         print 'examples', self.examples.shape, self.example_active
         X1 = np.concatenate((self.examples[self.example_active], self.libsamples[I1]))    
-        if len(X1)==0:
-            print 'No query examples. Abort'
-            return
         X0 = self.libsamples[I0]
+        if len(X1)+len(X0)==0:
+            print 'No query inputs. Abort'
+            return
         # unknown samples
         Ix = np.ones((N,), dtype=bool)
         Ix[I0+I1]=0
