@@ -55,6 +55,7 @@ class SearchFrame(wx.Frame):
     def OnGo(self, event):
         self.model.update_scores()
         self.rpanel.showRanking()
+        self.Fit()
     
     def OnFeedback(self, event):
         self.yesPanel.updateView()
