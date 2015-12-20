@@ -28,6 +28,7 @@ class SearchFrame(wx.Frame):
 #        r = (np.array([random_audio_file() for i in range(nfiles)]), np.random.rand(nfiles))
         rpanel = RankPanel(self, model)
         rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback)
+        self.rpanel = rpanel
 
         # feedback panels 
 
@@ -53,6 +54,7 @@ class SearchFrame(wx.Frame):
 
     def OnGo(self, event):
         self.model.update_scores()
+        self.rpanel.showRanking()
     
     def OnFeedback(self, event):
         self.yesPanel.updateView()
@@ -93,18 +95,16 @@ class RankPanel(wx.Panel):
         self.SetSizer(sizer)
         self.showRanking()
 
-    def updateRanking(self, newRanking):
-        self.ranking = newRanking
-        self.showRanking()
-
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
         scores = self.model.scores
-        sorting = np.argsort(scores)
+        sorting = np.argsort(scores)[::-1]  # descending order
         print sorting[:batchsize]
+        self.sizer.DeleteWindows()
         for f_ind in sorting[:batchsize]:
             f = get_libsample(f_ind)
             self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind))
+        self.sizer.Layout()
         self.Fit()
 
 class FeedbackPanel(wx.Panel):
