@@ -145,7 +145,7 @@ class SampleItem(wx.Panel):
         sizer = wx.BoxSizer()
         self.model = model
 
-        self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('play.png'))   #TODO: shrink button size
+        self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('play_s.png'))   #TODO: shrink button size
         self.playButton.Bind(wx.EVT_BUTTON, self.OnPlay)
         
         label = wx.StaticText(self, label= os.path.split(sampleFile)[-1])
@@ -169,11 +169,11 @@ class SampleItem(wx.Panel):
             print f
             data, fs = sf.read(f)
             sd.play(data, fs, do_after = self.AfterPlay)    # new thread, with 
-            self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('stop.png'))
+            self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('stop_s.png'))
             self.playing = True
 
     def AfterPlay(self):
-        self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('play.png'))
+        self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('play_s.png'))
         self.playing = False        
 
        
