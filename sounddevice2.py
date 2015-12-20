@@ -2224,7 +2224,8 @@ class _CallbackContext(object):
 
     def start_stream(self, StreamClass, samplerate, channels, dtype, callback,
                      blocking, additional_finished_callback, **kwargs):
-        stop()  # Stop previous playback/recording
+        # buggy Pa_CloseStream in portaudio, avoid when possible:
+        #stop()  # Stop previous playback/recording
 
         def complete_finished_callback():
             self.finished_callback()
