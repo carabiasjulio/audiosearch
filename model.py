@@ -9,18 +9,25 @@ class SearchModel(object):
         # model states
         self.libsamples = X
         N,D = X.shape
+        self.N = N
+        self.D = D
         self.scores = np.zeros((N,))
         self.feedback = ([],[])           # (indices_true, indices_false)  
-        self.query_examples = np.zeros((0,D))    # key: file name    value: feature vector
+        self.examples = np.zeros((0,D))    # never delete loaded examples; should use database in practice 
+        self.example_files = []
+        self.example_active = []     # indices of active query examples i.e. deleted
         self.learner = neighbors.KNeighborsClassifier()
 
     def add_example(self, f):
         """ f: string, audio file name """
         x = get_features(f)
-        self.query_examples[f] = x  # use hash(f) as key instead?
+        self.example_active.append(len(self.examples))
+        self.examples = np.concatenate((self.examples, x.reshape((1,self.D))))
+        self.example_files.append(f)
 
     def remove_example(self, f):
-        self.query_examples.pop(f)
+        f_ind = self.example_files.index(f)
+        self.example_active.remove(f_ind)
 
     def add_feedback(self, label_class, s_ind):
         ''' label_class: boolean
@@ -39,16 +46,15 @@ class SearchModel(object):
         print 're-score'
         # traing samples
         I0, I1 = self.feedback
-        print I0
-        print self.libsamples[I0]
-
-        X1 = np.concatenate((self.query_examples.values(), self.libsamples[I1]))    
+        print 'feedback inds', I0, I1
+        print 'examples', self.examples.shape, self.example_active
+        X1 = np.concatenate((self.examples[self.example_active], self.libsamples[I1]))    
         if len(X1)==0:
             print 'No query examples. Abort'
             return
         X0 = self.libsamples[I0]
         # unknown samples
-        Ix = np.ones((N,))
+        Ix = np.ones((N,), dtype=bool)
         Ix[I0+I1]=0
         L = self.libsamples[Ix]
 
