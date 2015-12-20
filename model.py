@@ -29,17 +29,21 @@ class SearchModel(object):
         f_ind = self.example_files.index(f)
         self.example_active.remove(f_ind)
 
-    def add_feedback(self, label_class, s_ind):
-        ''' label_class: boolean
+    def add_feedback(self, class_label, s_ind):
+        ''' class_label: boolean
             s_ind: sample index 
         '''
-        self.feedback[label_class].append(s_ind)
+        self.feedback[class_label].append(s_ind)
 
-    def remove_feedback(self, label_class, s_ind):
-        ''' label_class: boolean
+    def remove_feedback(self, class_label, s_ind):
+        ''' class_label: boolean
             s_ind: sample index 
         '''
-        self.feedback[label_class].remove(s_ind)
+        self.feedback[class_label].remove(s_ind)
+
+    def remove_all_feedback(self, class_label):
+        F = len(self.feedback[class_label])
+        [self.feedback[class_label].pop() for i in range(F)]
 
     def update_scores(self):
         """ re-rank samples in search_scope based on query examples and current feedback. Update self.ranking . """

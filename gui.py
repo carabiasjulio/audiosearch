@@ -32,9 +32,6 @@ class SearchFrame(wx.Frame):
 
         # feedback panels 
 
-        yesLabel = wx.StaticText(self, label='Yes!')
-        noLabel = wx.StaticText(self, label='NOOO')
-
         yesPanel = FeedbackPanel(self, model, True)
         noPanel = FeedbackPanel(self, model, False)
         self.yesPanel = yesPanel
@@ -100,7 +97,7 @@ class RankPanel(wx.Panel):
         """ batchsize: number of results to load each time/page """
         scores = self.model.scores
         sorting = np.argsort(scores)[::-1]  # descending order
-        print sorting[:batchsize]
+        print 'proposing:', sorting[:batchsize]
         self.sizer.DeleteWindows()
         for f_ind in sorting[:batchsize]:
             f = get_libsample(f_ind)
@@ -121,6 +118,11 @@ class FeedbackPanel(wx.Panel):
         else:
             label = wx.StaticText(self, label='NOOO')
         self.sizer.Add(label)
+
+        clearButton = wx.Button(self, label='clear')
+        clearButton.Bind(wx.EVT_BUTTON, self.OnClear)
+        self.sizer.Add(clearButton)
+
         self.ssizer = wx.BoxSizer(wx.VERTICAL)
         self.sizer.Add(self.ssizer)
 
@@ -131,6 +133,10 @@ class FeedbackPanel(wx.Panel):
            self.ssizer.Add(FeedbackSampleItem(self, self.model, get_libsample(s_ind), s_ind, self.class_label))
         self.sizer.Layout()
         self.Fit()
+
+    def OnClear(self, event):
+        self.ssizer.DeleteWindows()
+        self.model.remove_all_feedback(self.class_label)
 
 class SampleItem(wx.Panel):
     ''' A mini sample player that features play/stop control, plus self removal'''
