@@ -471,7 +471,7 @@ def wait():
         return _last_callback.wait()
 
 
-def stop(ignore_errors=True):
+def stop(ignore_errors=False):
     """Stop playback/recording.
 
     This only stops :func:`play`, :func:`rec` and :func:`playrec`, but
@@ -480,8 +480,10 @@ def stop(ignore_errors=True):
     :class:`RawInputStream`, :class:`RawOutputStream`.
 
     """
+    print 'try to stop'
     if _last_callback:
         _last_callback.stream.close(ignore_errors)
+    print 'stopped'
 
 
 def get_status():
@@ -1021,9 +1023,11 @@ class _StreamBase(object):
         as if :meth:`abort` had been called.
 
         """
+        print 'trying to close stream'
         err = _lib.Pa_CloseStream(self._ptr)
+        print 'stream closed'
         if not ignore_errors:
-            _check(err, "Error closing stream")
+            print _check(err, "Error closing stream")
 
 
 class RawInputStream(_StreamBase):
