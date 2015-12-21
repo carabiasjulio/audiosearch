@@ -95,12 +95,9 @@ class RankPanel(wx.Panel):
 
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
-        scores = self.model.scores
-        sorting = np.argsort(scores)[::-1]  # descending order
-        print 'proposing:', sorting[:batchsize]
+        proposals = self.model.get_proposals(batchsize)
         self.sizer.DeleteWindows()
-        for f_ind in sorting[:batchsize]:
-            f = get_libsample(f_ind)
+        for (f, f_ind, score) in proposals: 
             self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind))
         self.sizer.Layout()
         self.Fit()

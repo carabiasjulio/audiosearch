@@ -4,6 +4,7 @@ import os
 from matplotlib import pyplot as pl
 from scipy import signal 
 import soundfile as sf
+import sounddevice2 as sd
 import numpy as np
 import csv
 import VectorQuantizer as vq
@@ -18,12 +19,12 @@ fnames_path = '/home/mzhan/audiosearch/data/UrbanSound8K/fnames.csv'
 folds_path = '/home/mzhan/audiosearch/data/UrbanSound8K/folds.csv'
 
 FNAMES = np.loadtxt(fnames_path, delimiter=',', dtype=str)
-FOLDS = np.loadtxt(folds_path, delimiter=',')
+FOLDS = np.loadtxt(folds_path, delimiter=',', dtype=int)
 LIBSAMPLE_PATHS = np.array([os.path.join(data_dir, 'fold'+str(fold), fname) for (fold, fname) in zip(FOLDS, FNAMES)], dtype=str)
 
 # number of library samples (=8732)
-N = len(FNAMES)
 X = np.load(X_path)
+N,D = X.shape
 
 def get_libsample(n):
     ''' Get the n-th library sample, as file name string '''
@@ -52,6 +53,9 @@ def show_wav(w, sr=44100):
     pl.figure()
     pl.imshow(np.log(abs(S).T), origin="lower", aspect="auto", interpolation="none")
 
+def play_sample(f):
+    w,fs = sf.read(f)
+    sd.play(w,fs)
 
 
 # vector quantizer for feature extraction
