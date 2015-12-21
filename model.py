@@ -75,6 +75,14 @@ class SearchModel(object):
         #TODO: pass/use scores 
         return zip(LIBSAMPLE_PATHS[raw_inds], raw_inds, self.scores[sort_inds])
 
+    def get_random_samples(self, n_samples):
+        _,_,Ix = self.get_index_partition()
+        raw_inds = np.flatnonzero(Ix)
+        np.random.shuffle(raw_inds)
+        return zip(LIBSAMPLE_PATHS[raw_inds[:n_samples]], raw_inds[:n_samples])
+
+
+### Different score functions
 
 def mean_dist_ratio(X0, X1, L):
     """ 
@@ -109,12 +117,29 @@ def p_knn(X0, X1, L):
         raise Exception('Need negative samples.')
     if not n1:
         raise Exception('Need positive samples.')
-    k = np.min((12, (len(X0)+len(X1))/5))
-    if k==0:
-        print 'not enough data for k nearest neighbor; setting k=1'
-        k=1
+#    k = np.min((12, (n0+n1)/5))
+#    if k==0:
+#        print 'not enough data for k nearest neighbor; setting k=1'
+#        k=1
 
-    c = neighbors.KNeighborsClassifier(n_neighbors=k)
+    c = neighbors.KNeighborsClassifier()
     c.fit(np.concatenate((X0,X1)), np.concatenate((np.zeros(n0), np.ones(n1))) )
     scores = c.predict_proba(L)[:,1]
+    return scores
+
+def p_nc(X0, X1, L):
+    """
+    Nearest centroid classifer. 
+    Score is class prediction. (1 or 0)
+    X0: positive samples, shape (n0,d)
+    X1: negative samples, shape (n1,d)
+    L: unlabeled samples, shape (l,d)
+    return: 1-D array of length l   scores of unlabeled library samples
+    """
+    n0, n1 = map(len, [X0,X1])
+    c = neighbors.NearestCentroid() #metric='minkowski')
+    c.fit(np.concatenate((X0,X1)), np.concatenate((np.zeros(n0), np.ones(n1))) )
+    scores = c.predict(L)  # does not have score by default
+    print scores
+    scores[np.array(scores, dtype=bool)] = np.random.rand(scores.sum())   # randomize predicted positives
     return scores

@@ -11,34 +11,23 @@ import VectorQuantizer as vq
 import HartiganOnline as hartigan
 import spectrogram
 
+# Load library
+datasets = os.listdir('data')
+dataset_choice = 0
+dataset = datasets[dataset_choice]
+print 'Dataset:', dataset
 
-data_dir = '/home/mzhan/audiosearch/data/UrbanSound8K/audio' 
-metadata_path = '/home/mzhan/audiosearch/data/UrbanSound8K/metadata/UrbanSound8K_by_fold.csv'
-X_path = '/home/mzhan/audiosearch/X.npy'
-fnames_path = '/home/mzhan/audiosearch/data/UrbanSound8K/fnames.csv'
-folds_path = '/home/mzhan/audiosearch/data/UrbanSound8K/folds.csv'
-
-FNAMES = np.loadtxt(fnames_path, delimiter=',', dtype=str)
-FOLDS = np.loadtxt(folds_path, delimiter=',', dtype=int)
-LIBSAMPLE_PATHS = np.array([os.path.join(data_dir, 'fold'+str(fold), fname) for (fold, fname) in zip(FOLDS, FNAMES)], dtype=str)
+X = np.load(dataset+'.npy')
+N,D = X.shape
+with open(dataset+'.txt') as f:
+    LIBSAMPLE_PATHS = ''.join(f.readlines()).split('\n')
 
 # number of library samples (=8732)
-X = np.load(X_path)
-N,D = X.shape
-
-def get_libsample(n):
-    ''' Get the n-th library sample, as file name string '''
-    with open(metadata_path) as fmeta:
-        meta =  csv.reader(fmeta, delimiter=',')
-        meta.next()
-        [meta.next() for i in range(n)]
-        fname, fsID, start, end, salience, fold, classID, className = meta.next()
-        return os.path.join(data_dir, 'fold'+str(fold), fname)
 
 def get_random_libsample():
     ''' Get a random library sample, as file name string '''
     n = random.randint(0,N)
-    return get_libsample(n)
+    return LIBSAMPLE_PATHS[n]
 
 def show_wav(w, sr=44100):
     print len(w), sr
