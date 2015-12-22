@@ -13,14 +13,14 @@ import spectrogram
 
 # Load library
 datasets = os.listdir('data')
-dataset_choice = 0
+dataset_choice = 1
 dataset = datasets[dataset_choice]
 print 'Dataset:', dataset
 
 X = np.load(dataset+'.npy')
 N,D = X.shape
 with open(dataset+'.txt') as f:
-    LIBSAMPLE_PATHS = ''.join(f.readlines()).split('\n')
+    LIBSAMPLE_PATHS = np.array( ''.join(f.readlines()).split('\n'))
 
 # number of library samples (=8732)
 
@@ -42,10 +42,12 @@ def show_wav(w, sr=44100):
     pl.figure()
     pl.imshow(np.log(abs(S).T), origin="lower", aspect="auto", interpolation="none")
 
-def play_sample(f):
+def play_file(f):
     w,fs = sf.read(f)
     sd.play(w,fs)
 
+def play_sample(i):
+    play_file(LIBSAMPLE_PATHS[i])
 
 # vector quantizer for feature extraction
 NC = 512	# number of features (centroids)

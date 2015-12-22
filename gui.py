@@ -124,10 +124,9 @@ class FeedbackPanel(wx.Panel):
         self.sizer.Add(self.ssizer)
 
     def updateView(self):
-        print 'updating feedback list'
         self.ssizer.DeleteWindows()
-        for s_ind in self.model.feedback[self.class_label]:
-           self.ssizer.Add(FeedbackSampleItem(self, self.model, get_libsample(s_ind), s_ind, self.class_label))
+        for s, s_ind in self.model.get_feedback(self.class_label):
+           self.ssizer.Add(FeedbackSampleItem(self, self.model, s, s_ind, self.class_label))
         self.sizer.Layout()
         self.Fit()
 
@@ -157,7 +156,7 @@ class SampleItem(wx.Panel):
 
     def OnPlay(self, event):
         if self.playing:
-            print "stopping"
+            #print "stopping"
             sd.stop()
             self.AfterPlay()
             
