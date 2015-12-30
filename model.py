@@ -108,6 +108,7 @@ class SearchModel(object):
             s_ind: int or 1-D array, sample index 
         '''
         self.feedback[class_label][s_ind]=True
+        print 'added feedback:', s_ind 
 
     def remove_feedback(self, class_label, s_ind):
         ''' class_label: boolean
@@ -115,12 +116,13 @@ class SearchModel(object):
         '''
         # TODO: does not need class_label lol
         self.feedback[class_label][s_ind]=False
+        print 'removed feedback', s_ind
 
     def remove_all_feedback(self, class_label):
         self.feedback[class_label][:]=False
 
     def get_feedback(self, class_label):
-        I = self.feedback[class_label]
+        I = np.flatnonzero(self.feedback[class_label])
         return zip(LIBSAMPLE_PATHS[I], I)
 
     def update_scores(self, score=mean_dist_ratio):

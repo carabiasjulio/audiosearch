@@ -7,31 +7,33 @@ import numpy as np
 
 from model import SearchModel
 
+
 class SearchFrame(wx.Frame):
     def __init__(self, model):
         """ model: SearchModel object """
         self.model = model
 
-        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(800,800))
+        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(900,500))
         self.Center()
         
+        # main sizer/panel
+        self.toppanel = wx.Panel(self)
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        self.SetSizer(sizer)
+
         # query panel
         qpanel = QueryPanel(self, model)
-        
-        goButton = wx.Button(qpanel, label='GO')
+        goButton = wx.Button(qpanel, label='SEARCH')
         qpanel.Bind(wx.EVT_BUTTON, self.OnGo)
         qpanel.sizer.Add(goButton)
-
+        sizer.Add(qpanel, 1, wx.EXPAND)
 
         # ranking (results) panel
-#        nfiles = 100
-#        r = (np.array([random_audio_file() for i in range(nfiles)]), np.random.rand(nfiles))
         rpanel = RankPanel(self, model)
         rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback)
         self.rpanel = rpanel
 
         # feedback panels 
-
         yesPanel = FeedbackPanel(self, model, True)
         noPanel = FeedbackPanel(self, model, False)
         self.yesPanel = yesPanel
@@ -39,77 +41,85 @@ class SearchFrame(wx.Frame):
 
         # layout
         lowerSizer = wx.BoxSizer()
-        lowerSizer.Add(yesPanel)
-        lowerSizer.Add(rpanel)
-        lowerSizer.Add(noPanel)
+        lowerSizer.Add(rpanel, 1, wx.EXPAND)
+        lowerSizer.Add(yesPanel, 1, wx.EXPAND)
+        lowerSizer.Add(noPanel, 1, wx.EXPAND)
 
-        sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(qpanel)
-        sizer.Add(lowerSizer)
+        sizer.Add(lowerSizer, 1, wx.EXPAND)
 
-        self.SetSizerAndFit(sizer)
+        self.toppanel.SetSizer(sizer)
 
     def OnGo(self, event):
         self.model.update_scores()
         self.rpanel.showRanking()
-        self.Fit()
     
     def OnFeedback(self, event):
         self.yesPanel.updateView()
         self.noPanel.updateView()
         event.GetEventObject().GetParent().Destroy()   #TODO: better handling
-        self.Fit()
 
 
-class QueryPanel(wx.Panel):
+class QueryPanel(wx.ScrolledWindow):
     def __init__(self, parent, model):
-	wx.Panel.__init__(self, parent)
+        self.parent = parent
+	wx.ScrolledWindow.__init__(self, parent, -1, style=wx.TAB_TRAVERSAL)
         self.model = model
 	sizer = wx.BoxSizer()
-        uploadButton = wx.Button(label='upload', parent=self)
+        uploadButton = wx.Button(self, label='upload')
         uploadButton.Bind(wx.EVT_BUTTON, self.OnUpload)
         sizer.Add(uploadButton)
 
         self.sizer = sizer
         self.SetSizer(sizer)
+        self.EnableScrolling(True, True)
+        self.SetScrollRate(1,1)
 
     def OnUpload(self, event):
         fpick = wx.FileDialog(self,'choose query example','','',wildcard='WAV files (*.wav)|*.wav|all files (*)|*',style= wx.FD_OPEN)
         if fpick.ShowModal() == wx.ID_OK:
             f = fpick.GetPath()
             self.sizer.Add(ExampleSampleItem(self, self.model, f))
-            self.Fit()
-            self.GetParent().Fit()
+            self.OnInnerSizeChanged()
             # update model
             self.model.add_example(f)
 
-class RankPanel(wx.Panel):
+    def OnInnerSizeChanged(self):
+        w, h= self.sizer.GetMinSize()
+        self.SetVirtualSize((w,h))
+
+class RankPanel(wx.ScrolledWindow):
     def __init__(self, parent, model):
         """ rankings: tuple (fnames, scores) where fnames is a numpy array of strings and scores is a numpy array of numeric values """
         self.model = model
-        wx.Panel.__init__(self, parent)
+        wx.ScrolledWindow.__init__(self, parent)
         sizer = wx.BoxSizer(wx.VERTICAL)
         self.sizer = sizer
         self.SetSizer(sizer)
+        label = wx.StaticText(self, -1, 'Results:')
+        self.ssizer = wx.BoxSizer(wx.VERTICAL)
+        self.sizer.Add(label)
+        self.sizer.Add(self.ssizer)
+        self.SetScrollRate(1,1)
         self.showRanking()
 
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
         proposals = self.model.get_proposals(batchsize)
-        self.sizer.DeleteWindows()
+        self.ssizer.DeleteWindows()
         for (f, f_ind, score) in proposals: 
-            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind))
-        self.sizer.Layout()
-        self.Fit()
+            self.ssizer.Add(ProposedSampleItem(self, self.model, f, f_ind))
+        self.SetVirtualSize(self.sizer.GetMinSize())
 
-class FeedbackPanel(wx.Panel):
+class FeedbackPanel(wx.ScrolledWindow):
     def __init__(self, parent, model, class_label):
         ''' class_label: boolean indicating whether user accepts or rejects samples shown in the panel'''
         self.model = model
         self.class_label = class_label
-        wx.Panel.__init__(self, parent)
+
+        wx.ScrolledWindow.__init__(self, parent)
         self.sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.sizer)
+
         if class_label:
             label = wx.StaticText(self, label='Yes!')
         else:
@@ -123,12 +133,13 @@ class FeedbackPanel(wx.Panel):
         self.ssizer = wx.BoxSizer(wx.VERTICAL)
         self.sizer.Add(self.ssizer)
 
+        self.SetScrollRate(1,1)
+
     def updateView(self):
         self.ssizer.DeleteWindows()
         for s, s_ind in self.model.get_feedback(self.class_label):
            self.ssizer.Add(FeedbackSampleItem(self, self.model, s, s_ind, self.class_label))
-        self.sizer.Layout()
-        self.Fit()
+        self.SetVirtualSize(self.sizer.GetMinSize())
 
     def OnClear(self, event):
         self.ssizer.DeleteWindows()
@@ -162,7 +173,7 @@ class SampleItem(wx.Panel):
             
         else:
             f = self.sampleFile
-            print f
+            print f 
             data, fs = sf.read(f)
             sd.play(data, fs, do_after = self.AfterPlay)    # new thread, with 
             self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('stop_s.png'))
@@ -184,11 +195,10 @@ class RemovableSampleItem(SampleItem):
         
         sizer.Add(removeButton)
         self.SetSizerAndFit(sizer)
-#        self.Fit()
 
     def OnRemove(self, event):
         p = self.GetParent()
-        p.Fit()     # update panel size
+        p.SetVirtualSize(p.sizer.GetMinSize())
         self.updateModel()
         self.Destroy()
 
@@ -241,6 +251,10 @@ class TestApp(wx.App):
         w.Show()
         self.SetTopWindow(w)
         return True
-        
-app = TestApp()
-app.MainLoop()
+
+
+def main():
+    app = TestApp()
+    app.MainLoop()
+if __name__ == '__main__':
+    main()
