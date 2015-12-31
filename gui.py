@@ -14,7 +14,7 @@ class SearchFrame(wx.Frame):
         """ model: SearchModel object """
         self.model = model
 
-        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(950, 620))
+        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(950, 700))
         self.Center()
         
         # main sizer/panel
@@ -36,17 +36,20 @@ class SearchFrame(wx.Frame):
         qsizer.Add(goButton,1, flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
 
         # model control
-        controlBox = wx.StaticBoxSizer(wx.StaticBox(self, label='model control'))
-        m1 = wx.Button(self, label='mean distance ratio')
-        m1.Bind(wx.EVT_BUTTON, self.OnControl1)
-        m2 = wx.Button(self, label='K Nearest Neighbors')
-        m2.Bind(wx.EVT_BUTTON, self.OnControl2)
-        m3 = wx.Button(self, label='Naive Bayes')
-        m3.Bind(wx.EVT_BUTTON, self.OnControl3)
-        controlBox.Add(m1)
-        controlBox.Add(m2)
-        controlBox.Add(m3)
+#        controlBox = wx.StaticBoxSizer(wx.StaticBox(self, label='model control'))
+#        m1 = wx.Button(self, label='mean distance ratio')
+#        m1.Bind(wx.EVT_BUTTON, self.OnControl1)
+#        m2 = wx.Button(self, label='K Nearest Neighbors')
+#        m2.Bind(wx.EVT_BUTTON, self.OnControl2)
+#        m3 = wx.Button(self, label='Naive Bayes')
+#        m3.Bind(wx.EVT_BUTTON, self.OnControl3)
+#        controlBox.Add(m1)
+#        controlBox.Add(m2)
+#        controlBox.Add(m3)
 
+        model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
+        modelControl = wx.RadioBox(self, label='Model options', choices=model_options)
+        self.modelControl = modelControl
 
         # ranking (results) panel
         rpanel = RankPanel(self, model)
@@ -95,15 +98,16 @@ class SearchFrame(wx.Frame):
         lowerSizer.Add(fbox, 10, wx.EXPAND|wx.ALL, border=10)
         lowerSizer.AddSpacer(5)
 
-        sizer.Add(qsizer, 3, wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=10)
-        sizer.Add(controlBox, 1, wx.EXPAND)
-        sizer.Add(lowerSizer, 10, wx.EXPAND)
+        sizer.Add(qsizer, 2, wx.EXPAND|wx.ALL, border=10)
+        sizer.Add(modelControl, 1, wx.EXPAND|wx.ALL, border=15)
+        sizer.Add(lowerSizer, 7, wx.EXPAND)
         sizer.AddSpacer(10)
 
         self.toppanel.SetSizer(sizer)
 
     def OnGo(self, event):
-        self.model.update_scores()
+        choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
+        self.model.update_scores(score_func=choice)
         self.rpanel.showRanking()
     
     def OnFeedback(self, event):

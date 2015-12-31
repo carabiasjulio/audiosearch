@@ -88,6 +88,8 @@ def p_classifier( c):
 p_MNB = p_classifier(naive_bayes.MultinomialNB())
 p_GNB = p_classifier(naive_bayes.GaussianNB())
 
+SCORE_FUNCS = [mean_dist_ratio, p_knn, p_MNB]
+
 class SearchModel(object):
     def __init__(self):
         # model states
@@ -96,7 +98,7 @@ class SearchModel(object):
         self.examples = np.zeros((0,D))    # never delete loaded examples; should use database in practice 
         self.example_files = []
         self.example_active = []     # indices of active query examples i.e. deleted
-        self.score_func = mean_dist_ratio
+#        self.score_func = mean_dist_ratio
 
     def add_example(self, f):
         """ f: string, audio file name """
@@ -131,17 +133,15 @@ class SearchModel(object):
         I = np.flatnonzero(self.feedback[class_label])
         return zip(LIBSAMPLE_PATHS[I], I)
 
-    def update_scores(self, score=None):
+    def update_scores(self, score_func=None):
         """ re-score samples in LIBSAMPLE_PATHS based on query examples and current feedback. Update self.scores. 
         score: function f with signature f(E, I0, I1) = scores where scores is an numpy array of shape (N,) """
-        if not score:
-            score = self.score_func
         print 're-score'
         X0, X1, L = self.get_learning_data()
         if len(X1)==0:
             print 'No positive examples. Abort'
             return
-        self.scores = score(X0, X1, L)
+        self.scores = score_func(X0, X1, L)
 
     def get_learning_data(self):
         I0,I1,Ix = self.get_index_partition()
