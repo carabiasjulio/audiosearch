@@ -13,7 +13,7 @@ class SearchFrame(wx.Frame):
         """ model: SearchModel object """
         self.model = model
 
-        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(900,500))
+        wx.Frame.__init__(self, None, title='Search Audio by Example', size=(950, 620))
         self.Center()
         
         # main sizer/panel
@@ -27,23 +27,20 @@ class SearchFrame(wx.Frame):
         qpanel = QueryPanel(self, model)
         uploadButton = wx.Button(self, label='upload')
         uploadButton.Bind(wx.EVT_BUTTON, qpanel.OnUpload)
-        qbox.Add(uploadButton, 1, flag=wx.ALL|wx.ALIGN_CENTRE_VERTICAL, border=8)
-        qbox.Add(qpanel,8, flag=wx.EXPAND|wx.ALL, border=5)
+        qbox.Add(uploadButton, 1, flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTRE_VERTICAL, border=2)
+        qbox.Add(qpanel,8, flag=wx.EXPAND|wx.ALL, border=2)
         qsizer.Add(qbox, 6, wx.EXPAND|wx.ALL, border=5)
         goButton = wx.Button(self, label='SEARCH')
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
         qsizer.Add(goButton,1, flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
 
-        sizer.Add(qsizer, 2, wx.EXPAND|wx.ALL, border=10)
 
         # ranking (results) panel
-        rlabel = wx.StaticText(self, -1, 'Results:')
-        rsizer = wx.BoxSizer(wx.VERTICAL)
-        rsizer.Add(rlabel, 1, wx.EXPAND|wx.ALL, border=10)
         rpanel = RankPanel(self, model)
         rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback)
         self.rpanel = rpanel
-        rsizer.Add(rpanel,8, wx.EXPAND)
+        rbox = wx.StaticBoxSizer(wx.StaticBox(self, label='Results'))
+        rbox.Add(rpanel, 1,flag=wx.EXPAND|wx.ALIGN_CENTRE|wx.ALL, border=2)
 
         # feedback panels 
         ysizer = wx.BoxSizer(wx.VERTICAL)
@@ -52,11 +49,11 @@ class SearchFrame(wx.Frame):
         clearYesButton = wx.Button(self, label='clear')
         clearYesButton.Bind(wx.EVT_BUTTON, self.OnClearYes)
         yesPanel = FeedbackPanel(self, model, True)
-        yheader.Add(yeslabel, flag=wx.ALL, border=10)
+        yheader.Add(yeslabel, flag=wx.ALL, border=5)
         yheader.AddSpacer(80)
-        yheader.Add(clearYesButton,flag=wx.ALL, border=5)
+        yheader.Add(clearYesButton,flag=wx.BOTTOM, border=5)
         ysizer.Add(yheader,1)
-        ysizer.Add(yesPanel,8,wx.EXPAND)
+        ysizer.Add(yesPanel,9,wx.EXPAND)
 
         nsizer = wx.BoxSizer(wx.VERTICAL)
         nheader = wx.BoxSizer()
@@ -64,24 +61,30 @@ class SearchFrame(wx.Frame):
         clearNoButton = wx.Button(self, label='clear')
         clearNoButton.Bind(wx.EVT_BUTTON, self.OnClearNo)
         noPanel = FeedbackPanel(self, model, False)
-        nheader.Add(nolabel,flag=wx.ALL, border=10)
+        nheader.Add(nolabel,flag=wx.ALL, border=5)
         nheader.AddSpacer(80)
-        nheader.Add(clearNoButton,flag=wx.ALL, border=5)
+        nheader.Add(clearNoButton,flag=wx.BOTTOM, border=5)
         nsizer.Add(nheader,1)
-        nsizer.Add(noPanel,8,wx.EXPAND)
+        nsizer.Add(noPanel,9,wx.EXPAND)
 
         self.yesPanel = yesPanel
         self.noPanel = noPanel
 
+        fbox = wx.StaticBoxSizer(wx.StaticBox(self, label='Feedback'))
+        fbox.Add(ysizer,1, wx.EXPAND|wx.ALL, border=5)
+        fbox.Add(wx.StaticLine(self,style=wx.LI_VERTICAL), flag=wx.EXPAND)
+        fbox.Add(nsizer, 1,wx.EXPAND| wx.ALL, border=5)
+
         # global layout
         lowerSizer = wx.BoxSizer()
         lowerSizer.AddSpacer(5)
-        lowerSizer.Add(rsizer, 6, wx.EXPAND|wx.ALL, border=10)
-        lowerSizer.Add(ysizer, 5, wx.EXPAND|wx.ALL, border=10)
-        lowerSizer.Add(nsizer, 5, wx.EXPAND|wx.ALL, border=10)
+        lowerSizer.Add(rbox, 6, wx.EXPAND|wx.ALL, border=10)
+        lowerSizer.Add(fbox, 10, wx.EXPAND|wx.ALL, border=10)
         lowerSizer.AddSpacer(5)
 
-        sizer.Add(lowerSizer, 5, wx.EXPAND)
+        sizer.Add(qsizer, 3, wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=10)
+        sizer.Add(lowerSizer, 10, wx.EXPAND)
+        sizer.AddSpacer(10)
 
         self.toppanel.SetSizer(sizer)
 
@@ -176,7 +179,7 @@ class FeedbackPanel(wx.ScrolledWindow):
 class SampleItem(wx.Panel):
     ''' A mini sample player that features play/stop control, plus self removal'''
     def __init__(self, parent, model, sampleFile):
-        wx.Panel.__init__(self, parent)
+        wx.Panel.__init__(self, parent, style=wx.BORDER_STATIC)
         sizer = wx.BoxSizer()
         self.model = model
 
@@ -185,12 +188,12 @@ class SampleItem(wx.Panel):
         
         label = wx.StaticText(self, label= os.path.split(sampleFile)[-1])
       
-        sizer.Add(self.playButton, flag=wx.RIGHT, border=5)
-        sizer.Add(label, flag=wx.RIGHT, border=5)
+        sizer.Add(self.playButton, flag=wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=5)
+        sizer.Add(label, flag=wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=5)
         self.SetSizerAndFit(sizer)
         self.sizer = sizer
 
-        self.SetBackgroundColour('white')
+        self.SetBackgroundColour('light blue')
 
         self.sampleFile = sampleFile
         self.playing = False 
@@ -223,7 +226,7 @@ class RemovableSampleItem(SampleItem):
         removeButton = wx.Button(self, label = 'X', size=(30,30))
         removeButton.Bind(wx.EVT_BUTTON, self.OnRemove)
         
-        sizer.Add(removeButton)
+        sizer.Add(removeButton, flag=wx.ALL, border=5)
         self.SetSizerAndFit(sizer)
 
     def OnRemove(self, event):
@@ -260,8 +263,9 @@ class ProposedSampleItem(SampleItem):
         noButton = wx.BitmapButton(self, bitmap=wx.Bitmap('no.png'))
         noButton.Bind(wx.EVT_BUTTON, self.OnNo)
         bsizer = wx.BoxSizer()
-        bsizer.Add(yesButton)
-        bsizer.Add(noButton)
+        bsizer.Add(yesButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
+        bsizer.Add(noButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
+        bsizer.AddSpacer(5)
         self.sizer.Add(bsizer)
         self.SetSizerAndFit(self.sizer)
 
