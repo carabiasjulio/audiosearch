@@ -5,7 +5,6 @@ import soundfile as sf
 import sounddevice2 as sd
 import numpy as np
 
-import model
 from model import SearchModel
 
 
@@ -34,18 +33,6 @@ class SearchFrame(wx.Frame):
         goButton = wx.Button(self, label='SEARCH')
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
         qsizer.Add(goButton,1, flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
-
-        # model control
-        controlBox = wx.StaticBoxSizer(wx.StaticBox(self, label='model control'))
-        m1 = wx.Button(self, label='mean distance ratio')
-        m1.Bind(wx.EVT_BUTTON, self.OnControl1)
-        m2 = wx.Button(self, label='K Nearest Neighbors')
-        m2.Bind(wx.EVT_BUTTON, self.OnControl2)
-        m3 = wx.Button(self, label='Naive Bayes')
-        m3.Bind(wx.EVT_BUTTON, self.OnControl3)
-        controlBox.Add(m1)
-        controlBox.Add(m2)
-        controlBox.Add(m3)
 
 
         # ranking (results) panel
@@ -96,7 +83,6 @@ class SearchFrame(wx.Frame):
         lowerSizer.AddSpacer(5)
 
         sizer.Add(qsizer, 3, wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=10)
-        sizer.Add(controlBox, 1, wx.EXPAND)
         sizer.Add(lowerSizer, 10, wx.EXPAND)
         sizer.AddSpacer(10)
 
@@ -111,6 +97,7 @@ class SearchFrame(wx.Frame):
         self.noPanel.updateView()
         event.GetEventObject().GetParent().Destroy()   #TODO: better handling
 
+
     def OnClearYes(self, event):
         self.yesPanel.sizer.DeleteWindows()
         self.model.remove_all_feedback(True)
@@ -118,15 +105,6 @@ class SearchFrame(wx.Frame):
     def OnClearNo(self, event):
         self.noPanel.sizer.DeleteWindows()
         self.model.remove_all_feedback(False)
-
-    def OnControl1(self, event):
-        self.model.score_func = model.mean_dist_ratio
-
-    def OnControl2(self, event):
-        self.model.score_func = model.p_knn
-
-    def OnControl3(self, event):
-        self.model.score_func = model.p_MNB
 
 class QueryPanel(wx.ScrolledWindow):
     def __init__(self, parent, model):
@@ -171,7 +149,7 @@ class RankPanel(wx.ScrolledWindow):
         proposals = self.model.get_proposals(batchsize)
         self.sizer.DeleteWindows()
         for (f, f_ind, score) in proposals: 
-            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind, score), flag=wx.ALL, border=5)
+            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind), flag=wx.ALL, border=5)
         self.SetVirtualSize(self.sizer.GetMinSize())
 
 class FeedbackPanel(wx.ScrolledWindow):
@@ -275,11 +253,10 @@ class FeedbackSampleItem(RemovableSampleItem):
         self.model.remove_feedback(self.class_label, self.sample_index)
 
 class ProposedSampleItem(SampleItem):
-    def __init__(self, parent, model, sampleFile, s_ind, score):
+    def __init__(self, parent, model, sampleFile, s_ind):
         SampleItem.__init__(self, parent, model, sampleFile)
         sizer = self.sizer
         self.sample_index = s_ind
-        self.score = score
 
         yesButton = wx.BitmapButton(self, bitmap=wx.Bitmap('yes.png'))
         yesButton.Bind(wx.EVT_BUTTON, self.OnYes)
@@ -288,7 +265,6 @@ class ProposedSampleItem(SampleItem):
         bsizer = wx.BoxSizer()
         bsizer.Add(yesButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
         bsizer.Add(noButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
-#       bsizer.Add(wx.StaticText(self, label="%.3f"%self.score), flag=wx.Top|wx.BOTTOM, border=5)
         bsizer.AddSpacer(5)
         self.sizer.Add(bsizer)
         self.SetSizerAndFit(self.sizer)

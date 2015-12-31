@@ -1,5 +1,5 @@
 from utils import *
-from sklearn import neighbors
+from sklearn import neighbors, naive_bayes
 import numpy as np
 
 ### Different score functions
@@ -66,21 +66,27 @@ def p_nc(X0, X1, L):
     return scores
 
 
-def p_classifier(X0, X1, L, c):
-    n0 = len(X0)
-    n1 = len(X1)
-    if not n0:
-        raise Exception('Need negative samples.')
-    if not n1:
-        raise Exception('Need positive samples.')
-#    k = np.min((12, (n0+n1)/5))
-#    if k==0:
-#        print 'not enough data for k nearest neighbor; setting k=1'
-#        k=1
+def p_classifier( c):
+    """ return a score function """
+    def f(X0, X1, L):
+        n0 = len(X0)
+        n1 = len(X1)
+        if not n0:
+            raise Exception('Need negative samples.')
+        if not n1:
+            raise Exception('Need positive samples.')
+    #    k = np.min((12, (n0+n1)/5))
+    #    if k==0:
+    #        print 'not enough data for k nearest neighbor; setting k=1'
+    #        k=1
 
-    c.fit(np.concatenate((X0,X1)), np.concatenate((np.zeros(n0), np.ones(n1))) )
-    scores = c.predict_proba(L)[:,1]
-    return scores
+        c.fit(np.concatenate((X0,X1)), np.concatenate((np.zeros(n0), np.ones(n1))) )
+        scores = c.predict_proba(L)[:,1]
+        return scores
+    return f
+
+p_MNB = p_classifier(naive_bayes.MultinomialNB())
+p_GNB = p_classifier(naive_bayes.GaussianNB())
 
 class SearchModel(object):
     def __init__(self):
@@ -90,7 +96,7 @@ class SearchModel(object):
         self.examples = np.zeros((0,D))    # never delete loaded examples; should use database in practice 
         self.example_files = []
         self.example_active = []     # indices of active query examples i.e. deleted
-        self.learner = neighbors.KNeighborsClassifier()
+        self.score_func = mean_dist_ratio
 
     def add_example(self, f):
         """ f: string, audio file name """
@@ -108,7 +114,7 @@ class SearchModel(object):
             s_ind: int or 1-D array, sample index 
         '''
         self.feedback[class_label][s_ind]=True
-        print 'added feedback:', s_ind 
+        print 'added feedback:', class_label, s_ind 
 
     def remove_feedback(self, class_label, s_ind):
         ''' class_label: boolean
@@ -116,7 +122,7 @@ class SearchModel(object):
         '''
         # TODO: does not need class_label lol
         self.feedback[class_label][s_ind]=False
-        print 'removed feedback', s_ind
+        print 'removed feedback', class_label, s_ind
 
     def remove_all_feedback(self, class_label):
         self.feedback[class_label][:]=False
@@ -125,14 +131,15 @@ class SearchModel(object):
         I = np.flatnonzero(self.feedback[class_label])
         return zip(LIBSAMPLE_PATHS[I], I)
 
-    def update_scores(self, score=mean_dist_ratio):
+    def update_scores(self, score=None):
         """ re-score samples in LIBSAMPLE_PATHS based on query examples and current feedback. Update self.scores. 
         score: function f with signature f(E, I0, I1) = scores where scores is an numpy array of shape (N,) """
-
+        if not score:
+            score = self.score_func
         print 're-score'
         X0, X1, L = self.get_learning_data()
-        if len(X1)+len(X0)==0:
-            print 'No query inputs. Abort'
+        if len(X1)==0:
+            print 'No positive examples. Abort'
             return
         self.scores = score(X0, X1, L)
 
