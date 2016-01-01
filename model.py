@@ -1,6 +1,7 @@
 from utils import *
 from sklearn import neighbors, naive_bayes
 import numpy as np
+import logging
 
 ### Different score functions
 
@@ -91,7 +92,7 @@ p_GNB = p_classifier(naive_bayes.GaussianNB())
 SCORE_FUNCS = [mean_dist_ratio, p_knn, p_MNB]
 
 class SearchModel(object):
-    def __init__(self):
+    def __init__(self, user):
         # model states
         self.scores = np.random.rand(N)     # random score upon start (thus user sees random samples at first)
         self.feedback = (np.zeros(N, dtype=bool), np.zeros(N, dtype=bool))      # (indices_true, indices_false)  
@@ -99,6 +100,9 @@ class SearchModel(object):
         self.example_files = []
         self.example_active = []     # indices of active query examples i.e. deleted
 #        self.score_func = mean_dist_ratio
+        logging.basicConfig(filename=user+'.log', level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+        logging.info('\nNEW TASK')
+
 
     def add_example(self, f):
         """ f: string, audio file name """
@@ -106,17 +110,19 @@ class SearchModel(object):
         self.example_active.append(len(self.examples))
         self.examples = np.concatenate((self.examples, x.reshape((1,D))))
         self.example_files.append(f)
+        logging.info("Added example %s"%f)
 
     def remove_example(self, f):
         f_ind = self.example_files.index(f)
         self.example_active.remove(f_ind)
+        logging.info("Removed example %s"%f)
 
     def add_feedback(self, class_label, s_ind):
         ''' class_label: boolean
             s_ind: int or 1-D array, sample index 
         '''
         self.feedback[class_label][s_ind]=True
-        print 'added feedback:', class_label, s_ind 
+        logging.info("Added feedback for class %d: %s"%(class_label, s_ind))
 
     def remove_feedback(self, class_label, s_ind):
         ''' class_label: boolean
@@ -124,10 +130,11 @@ class SearchModel(object):
         '''
         # TODO: does not need class_label lol
         self.feedback[class_label][s_ind]=False
-        print 'removed feedback', class_label, s_ind
+        logging.info("Removed feedback class %d:  %s" % (class_label, s_ind))
 
     def remove_all_feedback(self, class_label):
         self.feedback[class_label][:]=False
+        logging.info("Removed all feedback for class %d" % class_label)
 
     def get_feedback(self, class_label):
         I = np.flatnonzero(self.feedback[class_label])
@@ -142,6 +149,7 @@ class SearchModel(object):
             print 'No positive examples. Abort'
             return
         self.scores = score_func(X0, X1, L)
+        logging.info("Score updated")
 
     def get_learning_data(self):
         I0,I1,Ix = self.get_index_partition()
@@ -165,6 +173,7 @@ class SearchModel(object):
         # convert to library index
         raw_inds = np.flatnonzero(Ix)[sort_inds]
         #TODO: pass/use scores 
+        logging.info("Proposing %s \n %s" % (raw_inds, LIBSAMPLE_PATHS[raw_inds])) 
         return zip(LIBSAMPLE_PATHS[raw_inds], raw_inds, self.scores[sort_inds])
 
     def get_random_samples(self, n_samples):

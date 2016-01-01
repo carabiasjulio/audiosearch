@@ -308,15 +308,21 @@ class ProposedSampleItem(SampleItem):
         event.Skip()
         
 class TestApp(wx.App):    
+    def __init__(self, user):
+        self.user = user
+        wx.App.__init__(self)
+
     def OnInit(self):
-        w = SearchFrame(SearchModel())
+        w = SearchFrame(SearchModel(self.user))
         w.Show()
         self.SetTopWindow(w)
         return True
 
+import sys
 
-def main():
-    app = TestApp()
+def main(user):
+    app = TestApp(user)
     app.MainLoop()
+
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1])   # take the first argument as user name, ignore trailing stuff
