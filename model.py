@@ -10,8 +10,8 @@ def mean_dist_ratio(X0, X1, L):
     score by mean distance ratio
     X0: positive samples, shape (n0,d)
     X1: negative samples, shape (n1,d)
-    L: unlabeled samples, shape (l,d)
-    return: 1-D array of length l   scores of unlabeled library samples
+    L: unfeedback_classed samples, shape (l,d)
+    return: 1-D array of length l   scores of unfeedback_classed library samples
     """
     m = neighbors.DistanceMetric.get_metric('minkowski')
     # mean distance to positive samples
@@ -30,8 +30,8 @@ def p_knn(X0, X1, L):
     score as class ratio among k nearest neighbors (class probability)
     X0: positive samples, shape (n0,d)
     X1: negative samples, shape (n1,d)
-    L: unlabeled samples, shape (l,d)
-    return: 1-D array of length l   scores of unlabeled library samples
+    L: unfeedback_classed samples, shape (l,d)
+    return: 1-D array of length l   scores of unfeedback_classed library samples
     """
     n0 = len(X0)
     n1 = len(X1)
@@ -55,8 +55,8 @@ def p_nc(X0, X1, L):
     Score is class prediction. (1 or 0)
     X0: positive samples, shape (n0,d)
     X1: negative samples, shape (n1,d)
-    L: unlabeled samples, shape (l,d)
-    return: 1-D array of length l   scores of unlabeled library samples
+    L: unfeedback_classed samples, shape (l,d)
+    return: 1-D array of length l   scores of unfeedback_classed library samples
     """
     n0, n1 = map(len, [X0,X1])
     c = neighbors.NearestCentroid(shrink_threshold=0.1) #metric='minkowski')
@@ -90,6 +90,7 @@ p_MNB = p_classifier(naive_bayes.MultinomialNB())
 p_GNB = p_classifier(naive_bayes.GaussianNB())
 
 SCORE_FUNCS = [mean_dist_ratio, p_knn, p_MNB]
+FEEDBACK_LABELS= ['negative', 'positive']
 
 class SearchModel(object):
     def __init__(self, user):
@@ -100,8 +101,24 @@ class SearchModel(object):
         self.example_files = []
         self.example_active = []     # indices of active query examples i.e. deleted
 #        self.score_func = mean_dist_ratio
+        self.target_class = None    # target retrieval class
         logging.basicConfig(filename=user+'.log', level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         logging.info('\nNEW TASK')
+    
+    def restart(self):
+        self.__init__(self.user)
+
+    def set_target_class(self, target):
+        self.target_class = target
+        logging.info("Target class set to #%d %s" %(target, CLASS_NAMES[target]))
+
+    def get_random_class_sample(self):
+        if self.target_class!=None:
+            logging.info("Retrieved a random sample of sound class #%d %s" % (self.target_class, CLASS_NAMES[self.target_class]))
+            s_ind = np.random.choice(np.flatnonzero(Y==self.target_class))
+            return (LIBSAMPLE_PATHS[s_ind], s_ind)
+        else:
+            raise Exception("Target class not set!")
 
 
     def add_example(self, f):
@@ -117,27 +134,27 @@ class SearchModel(object):
         self.example_active.remove(f_ind)
         logging.info("Removed example %s"%f)
 
-    def add_feedback(self, class_label, s_ind):
-        ''' class_label: boolean
+    def add_feedback(self, feedback_class, s_ind):
+        ''' feedback_class: boolean
             s_ind: int or 1-D array, sample index 
         '''
-        self.feedback[class_label][s_ind]=True
-        logging.info("Added feedback for class %d: %s"%(class_label, s_ind))
+        self.feedback[feedback_class][s_ind]=True
+        logging.info("Labeled sample %d as %s"%(s_ind, FEEDBACK_LABELS[feedback_class]))
 
-    def remove_feedback(self, class_label, s_ind):
-        ''' class_label: boolean
+    def remove_feedback(self, feedback_class, s_ind):
+        ''' feedback_class: boolean
             s_ind: sample index 
         '''
-        # TODO: does not need class_label lol
-        self.feedback[class_label][s_ind]=False
-        logging.info("Removed feedback class %d:  %s" % (class_label, s_ind))
+        # TODO: does not need feedback_class lol
+        self.feedback[feedback_class][s_ind]=False
+        logging.info("Unlabeled sample %d" % s_ind)
 
-    def remove_all_feedback(self, class_label):
-        self.feedback[class_label][:]=False
-        logging.info("Removed all feedback for class %d" % class_label)
+    def remove_all_feedback(self, feedback_class):
+        self.feedback[feedback_class][:]=False
+        logging.info("Unlabeled all %s samples" % FEEDBACK_LABELS[feedback_class])
 
-    def get_feedback(self, class_label):
-        I = np.flatnonzero(self.feedback[class_label])
+    def get_feedback(self, feedback_class):
+        I = np.flatnonzero(self.feedback[feedback_class])
         return zip(LIBSAMPLE_PATHS[I], I)
 
     def update_scores(self, score_func=None):
@@ -153,12 +170,12 @@ class SearchModel(object):
 
     def get_learning_data(self):
         I0,I1,Ix = self.get_index_partition()
-        # labeled samples
+        # feedback_classed samples
         print 'feedback indices', I0.nonzero(), I1.nonzero()
         print 'examples', self.examples.shape, self.example_active
         X1 = np.concatenate((self.examples[self.example_active], X[I1]))    
         X0 = X[I0]
-        # unlabeled samples
+        # unfeedback_classed samples
         L = X[Ix]
         return X0, X1, L
 

@@ -59,8 +59,8 @@ X = np.load(dataset+'.npy')
 N,D = X.shape
 with open(dataset+'.txt') as f:
     LIBSAMPLE_PATHS = np.array( ''.join(f.readlines()).split('\n'))
-
-# number of library samples (=8732)
+Y = np.load(dataset+'_Y.npy')
+CLASS_NAMES = ["air conditioner", "car horn", "children playing", "dog bark", "drilling", "engine idling", "gun_shot", "jackhammer", "siren", "street music"]
 
 def get_random_libsample():
     ''' Get a random library sample, as file name string '''
