@@ -9,31 +9,54 @@ import model
 from model import SearchModel
 
 
+# command IDs for buttons
+ID_accept = 1
+ID_reject = 0
+ID_remove = 2
+
 class SearchFrame(wx.Frame):
     def __init__(self, model):
         """ model: SearchModel object """
         self.model = model
+        
+        
 
         wx.Frame.__init__(self, None, title='Search Audio by Example', size=(950, 700))
         self.Center()
         
         # main sizer/panel
-        self.toppanel = wx.Panel(self)
+#        self.toppanel = wx.Panel(self)
         sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(sizer)
+
+        # Task control
+        taskButton = wx.Button(self, label='New Task', size=(80,30))
+        taskButton.Bind(wx.EVT_BUTTON, self.OnNewTask)
+        
+        taskLabel = wx.StaticText(self, label="Current target: Not Set")
+        self.taskLabel = taskLabel
+
+        tsizer = wx.StaticBoxSizer(wx.StaticBox(self, label="Search Task"))
+        tsizer.Add(taskLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
+        tsizer.AddStretchSpacer()
+        tsizer.Add(taskButton, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
+        sizer.Add(tsizer,0, wx.EXPAND|wx.ALL, border=10)
 
         # query panel
         qsizer = wx.BoxSizer()
         qbox = wx.StaticBoxSizer(wx.StaticBox(self, label= 'Query examples'))
         qpanel = QueryPanel(self, model)
-        uploadButton = wx.Button(self, label='upload')
+        uploadButton = wx.Button(self, label='upload', size=(70,40))
         uploadButton.Bind(wx.EVT_BUTTON, qpanel.OnUpload)
-        qbox.Add(uploadButton, 1, flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTRE_VERTICAL, border=2)
-        qbox.Add(qpanel,8, flag=wx.EXPAND|wx.ALL, border=2)
-        qsizer.Add(qbox, 6, wx.EXPAND|wx.ALL, border=5)
-        goButton = wx.Button(self, label='SEARCH')
+        qbox.Add(uploadButton,flag=wx.TOP|wx.BOTTOM|wx.ALIGN_CENTRE_VERTICAL, border=23)
+        qbox.Add(qpanel,1, flag=wx.EXPAND|wx.ALL, border=2)
+
+        qsizer.Add(qbox,1, flag=wx.ALL, border=5)
+        goButton = wx.Button(self, label='SEARCH', size=(80,-1))
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
-        qsizer.Add(goButton,1, flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
+        qsizer.Add(goButton,flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
+
+        sizer.Add(qsizer, flag= wx.EXPAND|wx.ALL, border=10)
 
         # model control
 #        controlBox = wx.StaticBoxSizer(wx.StaticBox(self, label='model control'))
@@ -53,7 +76,8 @@ class SearchFrame(wx.Frame):
 
         # ranking (results) panel
         rpanel = RankPanel(self, model)
-        rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback)
+        rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback, id=ID_accept)
+        rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback, id=ID_reject)
         self.rpanel = rpanel
         rbox = wx.StaticBoxSizer(wx.StaticBox(self, label='Results'))
         rbox.Add(rpanel, 1,flag=wx.EXPAND|wx.ALIGN_CENTRE|wx.ALL, border=2)
@@ -62,29 +86,36 @@ class SearchFrame(wx.Frame):
         ysizer = wx.BoxSizer(wx.VERTICAL)
         yheader = wx.BoxSizer()
         yeslabel = wx.StaticText(self, label='Accepted:')
-        clearYesButton = wx.Button(self, label='clear')
-        clearYesButton.Bind(wx.EVT_BUTTON, self.OnClearYes)
+        yesCount = wx.StaticText(self, label="(0)")
+        yesCount.SetForegroundColour('red')
+        clearYesButton = wx.Button(self, id = ID_accept, label='clear', size=(60,30))
+        clearYesButton.Bind(wx.EVT_BUTTON, self.OnClearFeedback)
         yesPanel = FeedbackPanel(self, model, True)
+        yesPanel.Bind(wx.EVT_BUTTON, self.OnRemoveFeedback, id=ID_remove)
         yheader.Add(yeslabel, flag=wx.ALL, border=5)
-        yheader.AddSpacer(80)
+        yheader.Add(yesCount, flag=wx.ALL, border=5)
+        yheader.AddStretchSpacer()
         yheader.Add(clearYesButton,flag=wx.BOTTOM, border=5)
-        ysizer.Add(yheader,1)
+        ysizer.Add(yheader,1, wx.EXPAND)
         ysizer.Add(yesPanel,9,wx.EXPAND)
 
         nsizer = wx.BoxSizer(wx.VERTICAL)
         nheader = wx.BoxSizer()
         nolabel = wx.StaticText(self, label='Rejected:')
-        clearNoButton = wx.Button(self, label='clear')
-        clearNoButton.Bind(wx.EVT_BUTTON, self.OnClearNo)
+        noCount = wx.StaticText(self, label="(0)")
+        clearNoButton = wx.Button(self, id=ID_reject, label='clear', size=(60,30))
+        clearNoButton.Bind(wx.EVT_BUTTON, self.OnClearFeedback)
         noPanel = FeedbackPanel(self, model, False)
+        noPanel.Bind(wx.EVT_BUTTON, self.OnRemoveFeedback, id=ID_remove)
         nheader.Add(nolabel,flag=wx.ALL, border=5)
-        nheader.AddSpacer(80)
+        nheader.Add(noCount, flag=wx.ALL, border=5)
+        nheader.AddStretchSpacer()
         nheader.Add(clearNoButton,flag=wx.BOTTOM, border=5)
-        nsizer.Add(nheader,1)
+        nsizer.Add(nheader,1, wx.EXPAND)
         nsizer.Add(noPanel,9,wx.EXPAND)
 
-        self.yesPanel = yesPanel
-        self.noPanel = noPanel
+        self.feedbackCounts = (noCount, yesCount)
+        self.feedbackPanels = (noPanel, yesPanel)
 
         fbox = wx.StaticBoxSizer(wx.StaticBox(self, label='Feedback'))
         fbox.Add(ysizer,1, wx.EXPAND|wx.ALL, border=5)
@@ -98,30 +129,64 @@ class SearchFrame(wx.Frame):
         lowerSizer.Add(fbox, 10, wx.EXPAND|wx.ALL, border=10)
         lowerSizer.AddSpacer(5)
 
-        sizer.Add(qsizer, 2, wx.EXPAND|wx.ALL, border=10)
         sizer.Add(modelControl, 1, wx.EXPAND|wx.ALL, border=15)
         sizer.Add(lowerSizer, 7, wx.EXPAND)
         sizer.AddSpacer(10)
 
-        self.toppanel.SetSizer(sizer)
+
+    def OnNewTask(self, event):
+        # Check if current task is completed TODO
+
+        # prompt user to choose target class
+        dialog = wx.SingleChoiceDialog(self, "Choose a target sound to search","Choose search target", choices = CLASS_NAMES)
+        dialog.ShowModal()
+        choice = dialog.GetSelection()
+
+        # update model
+        self.model.set_target_class(choice)
+        
+        # update taskLabel
+        self.taskLabel.SetLabel("Current target: %s" % CLASS_NAMES[choice])
 
     def OnGo(self, event):
         choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
         self.model.update_scores(score_func=choice)
         self.rpanel.showRanking()
-    
+   
+   # Feedback event handlers
     def OnFeedback(self, event):
-        self.yesPanel.updateView()
-        self.noPanel.updateView()
+        c = event.GetEventObject().GetId()
+        self.feedbackPanels[c].updateView()
         event.GetEventObject().GetParent().Destroy()   #TODO: better handling
+        self.rpanel.refresh()
+        self.updateFeedbackCount(c)
 
-    def OnClearYes(self, event):
-        self.yesPanel.sizer.DeleteWindows()
-        self.model.remove_all_feedback(True)
+    def OnRemoveFeedback(self, event):
+        # get sample item
+        s = event.GetEventObject().GetParent()
+        # get feedback panel
+        p = s.GetParent()
+        # update model
+        self.model.remove_feedback(s.class_label, s.sample_index)
+        # update feedback count label
+        self.updateFeedbackCount(s.class_label)
+        # remove from results
+        s.Destroy()
+        p.refresh()
 
-    def OnClearNo(self, event):
-        self.noPanel.sizer.DeleteWindows()
-        self.model.remove_all_feedback(False)
+    def OnClearFeedback(self, event):
+        c = event.GetId()
+        self.feedbackPanels[c].sizer.DeleteWindows()
+        self.model.remove_all_feedback(c)
+        self.updateFeedbackCount(c)
+
+    def updateFeedbackCount(self, class_label):
+        self.feedbackCounts[class_label].SetLabel("(%d)" % len(self.model.get_feedback(class_label)))
+        if class_label:
+            if self.model.task_completed():
+                self.yesCount.SetForegroundColour('green')
+            else:
+                self.yesCount.SetForegroundColour('red')
 
     def OnControl1(self, event):
         self.model.score_func = model.mean_dist_ratio
@@ -134,22 +199,25 @@ class SearchFrame(wx.Frame):
 
 class QueryPanel(wx.ScrolledWindow):
     def __init__(self, parent, model):
-        self.parent = parent
-	wx.ScrolledWindow.__init__(self, parent, -1, style=wx.TAB_TRAVERSAL)
         self.model = model
+	wx.ScrolledWindow.__init__(self, parent, -1, style=wx.TAB_TRAVERSAL, size=(200, 400))
+        
 	sizer = wx.BoxSizer()
-
         self.sizer = sizer
         self.SetSizer(sizer)
+
         self.SetScrollRate(1,1)
+        self.SetScrollPageSize(wx.HORIZONTAL,150)
         self.SetBackgroundColour('white')
 
+        self.Bind(wx.EVT_BUTTON, self.OnRemove, id=ID_remove)     # only remove event is skipped
 
     def OnUpload(self, event):
         fpick = wx.FileDialog(self,'choose query example','','',wildcard='WAV files (*.wav)|*.wav|all files (*)|*',style= wx.FD_OPEN)
         if fpick.ShowModal() == wx.ID_OK:
             f = fpick.GetPath()
-            self.sizer.Add(ExampleSampleItem(self, self.model, f), flag=wx.ALL|wx.ALIGN_CENTRE_VERTICAL, border=5)
+            e = ExampleSampleItem(self, self.model, f)
+            self.sizer.Add(e, flag=wx.LEFT|wx.ALIGN_CENTRE_VERTICAL, border=5)
             self.OnInnerSizeChanged()
             # update model
             self.model.add_example(f)
@@ -157,6 +225,12 @@ class QueryPanel(wx.ScrolledWindow):
     def OnInnerSizeChanged(self):
         w, h= self.sizer.GetMinSize()
         self.SetVirtualSize((w,h))
+
+    def OnRemove(self, event):
+        s = event.GetEventObject().GetParent()
+        self.model.remove_example(s.sampleFile)
+        s.Destroy()
+        self.Layout()
 
 class RankPanel(wx.ScrolledWindow):
     def __init__(self, parent, model):
@@ -175,8 +249,12 @@ class RankPanel(wx.ScrolledWindow):
         proposals = self.model.get_proposals(batchsize)
         self.sizer.DeleteWindows()
         for (f, f_ind, score) in proposals: 
-            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind, score), flag=wx.ALL, border=5)
+            self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind, score), flag=wx.TOP, border=5)
         self.SetVirtualSize(self.sizer.GetMinSize())
+    
+    def refresh(self):
+        self.Layout()
+        self.SetVirtualSize(self.GetMinSize()) 
 
 class FeedbackPanel(wx.ScrolledWindow):
     def __init__(self, parent, model, class_label):
@@ -184,22 +262,25 @@ class FeedbackPanel(wx.ScrolledWindow):
         self.model = model
         self.class_label = class_label
 
-        wx.ScrolledWindow.__init__(self, parent)
+        wx.ScrolledWindow.__init__(self, parent, -1, style=wx.TAB_TRAVERSAL)
+
         self.sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.sizer)
 
-
-        self.ssizer = wx.BoxSizer(wx.VERTICAL)
-        self.sizer.Add(self.ssizer)
-
         self.SetScrollRate(1,1)
         self.SetBackgroundColour('white')
-
+      
     def updateView(self):
-        self.ssizer.DeleteWindows()
+        print 'Update feedback'
+        self.sizer.DeleteWindows()
         for s, s_ind in self.model.get_feedback(self.class_label):
-           self.ssizer.Add(FeedbackSampleItem(self, self.model, s, s_ind, self.class_label), flag=wx.ALL, border=5)
+            sample = FeedbackSampleItem(self, self.model, s, s_ind, self.class_label)
+            self.sizer.Add(sample, flag=wx.TOP, border=5)
         self.SetVirtualSize(self.sizer.GetMinSize())
+
+    def refresh(self):
+        self.Layout()
+        self.SetVirtualSize(self.GetMinSize())
 
 
 class SampleItem(wx.Panel):
@@ -249,34 +330,29 @@ class RemovableSampleItem(SampleItem):
         SampleItem.__init__(self, parent, model, sampleFile)
         sizer = self.sizer
 
-        removeButton = wx.Button(self, label = 'X', size=(30,30))
+        removeButton = wx.Button(self, id = ID_remove, label = 'X', size=(30,30))
         removeButton.Bind(wx.EVT_BUTTON, self.OnRemove)
         
         sizer.Add(removeButton, flag=wx.ALL, border=5)
         self.SetSizerAndFit(sizer)
 
     def OnRemove(self, event):
-        p = self.GetParent()
-        p.SetVirtualSize(p.sizer.GetMinSize())
-        self.updateModel()
-        self.Destroy()
-
-    def updateModel(self):
-        pass
+#        p = self.GetParent()
+#        p.SetVirtualSize(p.sizer.GetMinSize())
+#        self.updateModel()
+#        p.updateView()
+#        self.Destroy()
+        event.Skip()
 
 
 class ExampleSampleItem(RemovableSampleItem):
-    def updateModel(self):
-        self.model.remove_example(self.sampleFile)
+    pass
 
 class FeedbackSampleItem(RemovableSampleItem):
     def __init__(self, parent, model, sampleFile, sample_index, class_label):
         RemovableSampleItem.__init__(self, parent, model, sampleFile)
         self.sample_index = sample_index
         self.class_label = class_label
-
-    def updateModel(self):
-        self.model.remove_feedback(self.class_label, self.sample_index)
 
 class ProposedSampleItem(SampleItem):
     def __init__(self, parent, model, sampleFile, s_ind, score):
@@ -285,9 +361,9 @@ class ProposedSampleItem(SampleItem):
         self.sample_index = s_ind
         self.score = score
 
-        yesButton = wx.BitmapButton(self, bitmap=wx.Bitmap('yes.png'))
+        yesButton = wx.BitmapButton(self, id=ID_accept, bitmap=wx.Bitmap('yes.png'))
         yesButton.Bind(wx.EVT_BUTTON, self.OnYes)
-        noButton = wx.BitmapButton(self, bitmap=wx.Bitmap('no.png'))
+        noButton = wx.BitmapButton(self, id=ID_reject, bitmap=wx.Bitmap('no.png'))
         noButton.Bind(wx.EVT_BUTTON, self.OnNo)
         bsizer = wx.BoxSizer()
         bsizer.Add(yesButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
@@ -301,7 +377,7 @@ class ProposedSampleItem(SampleItem):
         print "accepted:", self.sampleFile
         self.model.add_feedback(True, self.sample_index)
         event.Skip()
-
+    
     def OnNo(self, event):
         print "rejected:", self.sampleFile
         self.model.add_feedback(False, self.sample_index)

@@ -111,6 +111,12 @@ class SearchModel(object):
     def set_target_class(self, target):
         self.target_class = target
         logging.info("Target class set to #%d %s" %(target, CLASS_NAMES[target]))
+    
+    def task_completed(self):
+        """ Task is to find n_goal target samples """
+        n_goal = 10
+        return len(self.get_feedback(1))>=n_goal
+
 
     def get_random_class_sample(self):
         if self.target_class!=None:
