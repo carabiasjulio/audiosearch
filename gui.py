@@ -125,11 +125,18 @@ class SearchFrame(wx.Frame):
 
     def OnNewTask(self, event):
         # Check if current task is completed TODO
+        if not self.model.task_completed():
+            dlg = wx.MessageDialog(self, 'The current task is not completed yet. Are you sure you want to quit?', 'Current task not completed')
+            r = dlg.ShowModal()
+            dlg.Destroy()
+            if r!=wx.ID_OK:
+                return
 
         # prompt user to choose target class
         dialog = wx.SingleChoiceDialog(self, "Choose a target sound to search","Choose search target", choices = CLASS_NAMES)
         dialog.ShowModal()
         choice = dialog.GetSelection()
+        dialog.Destroy()
 
         # update model
         self.model.set_target_class(choice)
@@ -142,6 +149,8 @@ class SearchFrame(wx.Frame):
         sizer = self.examplePane.GetSizer()
         sizer.Add(SampleItem(self.examplePane, self.model, sampleFile), 0,flag=wx.ALIGN_CENTER|wx.ALL, border=5)
         sizer.Layout()
+
+        self.rpanel.DestroyChildren()
 
     def OnGo(self, event):
         choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
@@ -217,6 +226,7 @@ class QueryPanel(wx.ScrolledWindow):
             self.OnInnerSizeChanged()
             # update model
             self.model.add_example(f)
+        fpick.Destroy()
 
     def OnInnerSizeChanged(self):
         w, h= self.sizer.GetMinSize()
@@ -238,7 +248,7 @@ class RankPanel(wx.ScrolledWindow):
         self.SetSizer(sizer)
         self.SetScrollRate(1,1)
         self.SetBackgroundColour('white')
-        self.showRanking()
+#        self.showRanking()
 
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
@@ -289,7 +299,7 @@ class SampleItem(wx.Panel):
         self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('play_s.png'))   #TODO: shrink button size
         self.playButton.Bind(wx.EVT_BUTTON, self.OnPlay)
         
-        label = wx.StaticText(self, label= os.path.split(sampleFile)[-1])
+        label = wx.StaticText(self, label= os.path.split(sampleFile)[-1], size=(140,-1))
       
         sizer.Add(self.playButton, flag=wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=5)
         sizer.Add(label, flag=wx.ALL|wx.ALIGN_CENTER_VERTICAL, border=5)

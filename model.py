@@ -116,7 +116,7 @@ class SearchModel(object):
     def task_completed(self):
         """ Task is to find n_goal target samples """
         n_goal = 10
-        return len(self.get_feedback(1))>=n_goal
+        return len(self.get_feedback(1))>=n_goal or self.target_class<0
 
     def get_target_example(self):
         s_ind = np.random.choice(np.flatnonzero(Y==self.target_class)) 
