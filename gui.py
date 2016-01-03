@@ -181,12 +181,13 @@ class SearchFrame(wx.Frame):
         self.updateFeedbackCount(c)
 
     def updateFeedbackCount(self, class_label):
-        self.feedbackCounts[class_label].SetLabel("(%d)" % len(self.model.get_feedback(class_label)))
+        countLabel = self.feedbackCounts[class_label]
+        countLabel.SetLabel("(%d)" % len(self.model.get_feedback(class_label)))
         if class_label:
             if self.model.task_completed():
-                self.yesCount.SetForegroundColour('green')
+                countLabel.SetForegroundColour('green')
             else:
-                self.yesCount.SetForegroundColour('red')
+                countLabel.SetForegroundColour('red')
 
     def OnControl1(self, event):
         self.model.score_func = model.mean_dist_ratio
