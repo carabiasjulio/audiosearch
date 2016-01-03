@@ -102,6 +102,7 @@ class SearchModel(object):
         self.example_active = []     # indices of active query examples i.e. deleted
 #        self.score_func = mean_dist_ratio
         self.target_class = None    # target retrieval class
+        self.target_example = -1 
         logging.basicConfig(filename=user+'.log', level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         logging.info('\nNEW TASK')
     
@@ -117,7 +118,11 @@ class SearchModel(object):
         n_goal = 10
         return len(self.get_feedback(1))>=n_goal
 
-
+    def get_target_example(self):
+        s_ind = np.random.choice(np.flatnonzero(Y==self.target_class)) 
+        self.target_example = s_ind
+        return (s_ind, LIBSAMPLE_PATHS[s_ind])
+    
     def get_random_class_sample(self):
         if self.target_class!=None:
             logging.info("Retrieved a random sample of sound class #%d %s" % (self.target_class, CLASS_NAMES[self.target_class]))
@@ -145,7 +150,7 @@ class SearchModel(object):
             s_ind: int or 1-D array, sample index 
         '''
         self.feedback[feedback_class][s_ind]=True
-        logging.info("Labeled sample %d as %s"%(s_ind, FEEDBACK_LABELS[feedback_class]))
+        logging.info("Labeled sample %s as %s"%(s_ind, FEEDBACK_LABELS[feedback_class]))
 
     def remove_feedback(self, feedback_class, s_ind):
         ''' feedback_class: boolean
@@ -183,10 +188,16 @@ class SearchModel(object):
         X0 = X[I0]
         # unfeedback_classed samples
         L = X[Ix]
+
         return X0, X1, L
 
     def get_index_partition(self):
         I0, I1 = self.feedback
+        # Use copy
+        I1 = I1.copy()
+        # incorporate target example 
+        if self.target_example>=0:
+            I1[self.target_example]=1
         Ix = np.invert(np.any((I0, I1), axis=0))
         return I0, I1, Ix
 

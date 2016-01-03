@@ -30,46 +30,35 @@ class SearchFrame(wx.Frame):
         self.SetSizer(sizer)
 
         # Task control
-        taskButton = wx.Button(self, label='New Task', size=(80,30))
+        taskButton = wx.Button(self, label='New Task', size=(80,50))
         taskButton.Bind(wx.EVT_BUTTON, self.OnNewTask)
         
-        taskLabel = wx.StaticText(self, label="Current target: Not Set")
+        taskLabel = wx.StaticText(self, label="Target: Not Set", size=(250,-1))
         self.taskLabel = taskLabel
+
+        exampleLabel = wx.StaticText(self, label='Example:')
+        examplePane = wx.Panel(self)
+        examplePane.SetBackgroundColour('white')
+        examplePane.SetSizer(wx.BoxSizer())
+        examplePane.SetMinSize((250,80))
+        self.examplePane = examplePane
+
 
         tsizer = wx.StaticBoxSizer(wx.StaticBox(self, label="Search Task"))
         tsizer.Add(taskLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
+        tsizer.Add(exampleLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
+        tsizer.Add(examplePane, flag=wx.ALIGN_CENTER|wx.ALL|wx.EXPAND, border=5)
         tsizer.AddStretchSpacer()
         tsizer.Add(taskButton, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
         sizer.Add(tsizer,0, wx.EXPAND|wx.ALL, border=10)
+        
+#        submitButton = wx.Button(self, label='Submit', size=(80,40))
 
-        # query panel
-        qsizer = wx.BoxSizer()
-        qbox = wx.StaticBoxSizer(wx.StaticBox(self, label= 'Query examples'))
-        qpanel = QueryPanel(self, model)
-        uploadButton = wx.Button(self, label='upload', size=(70,40))
-        uploadButton.Bind(wx.EVT_BUTTON, qpanel.OnUpload)
-        qbox.Add(uploadButton,flag=wx.TOP|wx.BOTTOM|wx.ALIGN_CENTRE_VERTICAL, border=23)
-        qbox.Add(qpanel,1, flag=wx.EXPAND|wx.ALL, border=2)
-
-        qsizer.Add(qbox,1, flag=wx.ALL, border=5)
-        goButton = wx.Button(self, label='SEARCH', size=(80,-1))
+        goButton = wx.Button(self, label='SEARCH', size=(-1,60))
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
-        qsizer.Add(goButton,flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
-
-        sizer.Add(qsizer, flag= wx.EXPAND|wx.ALL, border=10)
+        sizer.Add(goButton, flag=wx.CENTER|wx.ALL, border=10)
 
         # model control
-#        controlBox = wx.StaticBoxSizer(wx.StaticBox(self, label='model control'))
-#        m1 = wx.Button(self, label='mean distance ratio')
-#        m1.Bind(wx.EVT_BUTTON, self.OnControl1)
-#        m2 = wx.Button(self, label='K Nearest Neighbors')
-#        m2.Bind(wx.EVT_BUTTON, self.OnControl2)
-#        m3 = wx.Button(self, label='Naive Bayes')
-#        m3.Bind(wx.EVT_BUTTON, self.OnControl3)
-#        controlBox.Add(m1)
-#        controlBox.Add(m2)
-#        controlBox.Add(m3)
-
         model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
         modelControl = wx.RadioBox(self, label='Model options', choices=model_options)
         self.modelControl = modelControl
@@ -146,7 +135,13 @@ class SearchFrame(wx.Frame):
         self.model.set_target_class(choice)
         
         # update taskLabel
-        self.taskLabel.SetLabel("Current target: %s" % CLASS_NAMES[choice])
+        self.taskLabel.SetLabel("Target: %s" % CLASS_NAMES[choice])
+
+        s_ind, sampleFile = self.model.get_target_example()
+        self.examplePane.DestroyChildren()
+        sizer = self.examplePane.GetSizer()
+        sizer.Add(SampleItem(self.examplePane, self.model, sampleFile), 0,flag=wx.ALIGN_CENTER|wx.ALL, border=5)
+        sizer.Layout()
 
     def OnGo(self, event):
         choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
