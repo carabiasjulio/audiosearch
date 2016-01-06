@@ -103,6 +103,7 @@ class SearchModel(object):
 #        self.score_func = mean_dist_ratio
         self.target_class = None    # target retrieval class
         self.target_example = -1 
+        self.user = user
         logging.basicConfig(filename=user+'.log', level=logging.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         logging.info('\nNEW TASK')
     
@@ -168,7 +169,7 @@ class SearchModel(object):
         I = np.flatnonzero(self.feedback[feedback_class])
         return zip(LIBSAMPLE_PATHS[I], I)
 
-    def update_scores(self, score_func=None):
+    def update_scores(self, k, weighted, metric):
         """ re-score samples in LIBSAMPLE_PATHS based on query examples and current feedback. Update self.scores. 
         score: function f with signature f(E, I0, I1) = scores where scores is an numpy array of shape (N,) """
         print 're-score'
@@ -176,6 +177,12 @@ class SearchModel(object):
         if len(X1)==0:
             print 'No positive examples. Abort'
             return
+        if len(X0)==0:
+            score_func = mean_dist_ratio
+            print 'No negative examples. Ranking samples based on distance to positive examples.'
+        else:
+            c = neighbors.KNeighborsClassifier(n_neighbors=k, weights=['uniform', 'distance'][weighted], metric=metric, p=10)
+            score_func = p_classifier(c)
         self.scores = score_func(X0, X1, L)
         logging.info("Score updated")
 
@@ -190,6 +197,10 @@ class SearchModel(object):
         L = X[Ix]
 
         return X0, X1, L
+
+    def get_trainset_size(self):
+        I0, I1 = self.feedback
+        return I0.sum()+I1.sum()+(self.target_example>=0)+len(self.example_active)
 
     def get_index_partition(self):
         I0, I1 = self.feedback

@@ -58,12 +58,34 @@ class SearchFrame(wx.Frame):
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
         sizer.Add(goButton, flag=wx.CENTER|wx.ALL, border=10)
 
-        # model control
-        model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
-        modelControl = wx.RadioBox(self, label='Model options', choices=model_options)
-        self.modelControl = modelControl
+        ### model control
+        # number of neighbors
+        kChoice = wx.SpinCtrl(self, min=1, max=15, initial=1)
+        self.kChoice = kChoice
+        # distance weighting on neighbors
+        weightingCheck = wx.CheckBox(self, label='distance-weighted')
+        self.weightingCheck = weightingCheck
+        # choice of distance metric
+        metricChoice = wx.Choice(self, choices=['minkowski', 'euclidean', 'manhattan'])
+        self.metricChoice = metricChoice
 
-        # ranking (results) panel
+        self.modelControls = [kChoice, weightingCheck, metricChoice]
+        for control in self.modelControls:
+            control.Disable()
+
+        csizer = wx.BoxSizer()
+        csizer.Add(kChoice, flag=wx.ALL, border=5)
+        csizer.Add(weightingCheck, flag=wx.ALL, border=5)
+        csizer.Add(metricChoice, flag=wx.ALL, border=5)
+
+        sizer.Add(csizer, flag=wx.EXPAND, border=5)
+        #model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
+        #modelControl = wx.RadioBox(self, label='Model options', choices=model_options)
+        #self.modelControl = modelControl
+        #sizer.Add(modelControl, 1, wx.EXPAND|wx.ALL, border=15)
+        
+        ### ranking (results) panel
+
         rpanel = RankPanel(self, model)
         rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback, id=ID_accept)
         rpanel.Bind(wx.EVT_BUTTON, self.OnFeedback, id=ID_reject)
@@ -118,7 +140,6 @@ class SearchFrame(wx.Frame):
         lowerSizer.Add(fbox, 10, wx.EXPAND|wx.ALL, border=10)
         lowerSizer.AddSpacer(5)
 
-        sizer.Add(modelControl, 1, wx.EXPAND|wx.ALL, border=15)
         sizer.Add(lowerSizer, 7, wx.EXPAND)
         sizer.AddSpacer(10)
 
@@ -139,22 +160,31 @@ class SearchFrame(wx.Frame):
         dialog.Destroy()
 
         # update model
+        self.model.restart()
         self.model.set_target_class(choice)
         
         # update taskLabel
         self.taskLabel.SetLabel("Target: %s" % CLASS_NAMES[choice])
 
+        # retrieve target example
         s_ind, sampleFile = self.model.get_target_example()
         self.examplePane.DestroyChildren()
         sizer = self.examplePane.GetSizer()
         sizer.Add(SampleItem(self.examplePane, self.model, sampleFile), 0,flag=wx.ALIGN_CENTER|wx.ALL, border=5)
         sizer.Layout()
-
+        
+        # clear previous results and feedback
         self.rpanel.DestroyChildren()
+        [p.DestroyChildren() for p in self.feedbackPanels]
 
     def OnGo(self, event):
-        choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
-        self.model.update_scores(score_func=choice)
+        k = self.kChoice.GetValue()
+        weighted = self.weightingCheck.GetValue()
+        metric = self.metricChoice.GetString(self.metricChoice.GetSelection())
+         
+        #choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
+        self.rpanel.DestroyChildren()
+        self.model.update_scores(k, weighted, metric)
         self.rpanel.showRanking()
    
    # Feedback event handlers
@@ -164,6 +194,10 @@ class SearchFrame(wx.Frame):
         event.GetEventObject().GetParent().Destroy()   #TODO: better handling
         self.rpanel.refresh()
         self.updateFeedbackCount(c)
+        self.updateKChoice()
+
+        if c==0:
+            [control.Enable() for control in self.modelControls]
 
     def OnRemoveFeedback(self, event):
         # get sample item
@@ -171,18 +205,28 @@ class SearchFrame(wx.Frame):
         # get feedback panel
         p = s.GetParent()
         # update model
-        self.model.remove_feedback(s.class_label, s.sample_index)
+        c = s.class_label
+        self.model.remove_feedback(c, s.sample_index)
         # update feedback count label
-        self.updateFeedbackCount(s.class_label)
+        self.updateFeedbackCount(c)
         # remove from results
         s.Destroy()
         p.refresh()
+        self.updateKChoice()
 
+        if c==0:
+            if len(self.model.get_feedback(0))==0:
+                [control.Disable() for control in self.modelControls]
+        
     def OnClearFeedback(self, event):
         c = event.GetId()
         self.feedbackPanels[c].sizer.DeleteWindows()
         self.model.remove_all_feedback(c)
         self.updateFeedbackCount(c)
+        self.updateKChoice()
+        if c==0:
+            if len(self.model.get_feedback(0))==0:
+                [control.Disable() for control in self.modelControls]
 
     def updateFeedbackCount(self, class_label):
         countLabel = self.feedbackCounts[class_label]
@@ -192,6 +236,10 @@ class SearchFrame(wx.Frame):
                 countLabel.SetForegroundColour('green')
             else:
                 countLabel.SetForegroundColour('red')
+
+    def updateKChoice(self):
+        n = self.model.get_trainset_size()
+        self.kChoice.SetRange(1, n)
 
     def OnControl1(self, event):
         self.model.score_func = model.mean_dist_ratio
@@ -253,7 +301,7 @@ class RankPanel(wx.ScrolledWindow):
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """
         proposals = self.model.get_proposals(batchsize)
-        self.sizer.DeleteWindows()
+        #self.sizer.DeleteWindows()
         for (f, f_ind, score) in proposals: 
             self.sizer.Add(ProposedSampleItem(self, self.model, f, f_ind, score), flag=wx.TOP, border=5)
         self.SetVirtualSize(self.sizer.GetMinSize())
