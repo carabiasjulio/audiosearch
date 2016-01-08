@@ -95,7 +95,7 @@ FEEDBACK_LABELS= ['negative', 'positive']
 class SearchModel(object):
     def __init__(self, user):
         # model states
-        self.scores = np.random.rand(N)     # random score upon start (thus user sees random samples at first)
+        self.scores = None     # random score upon start (thus user sees random samples at first)
         self.feedback = (np.zeros(N, dtype=bool), np.zeros(N, dtype=bool))      # (indices_true, indices_false)  
         self.examples = np.zeros((0,D))    # never delete loaded examples; should use database in practice 
         self.example_files = []
@@ -119,12 +119,12 @@ class SearchModel(object):
         n_goal = 10
         return len(self.get_feedback(1))>=n_goal or self.target_class<0
 
-    def get_target_example(self):
+    def get_random_class_sample(self):
         s_ind = np.random.choice(np.flatnonzero(Y==self.target_class)) 
         self.target_example = s_ind
         return (s_ind, LIBSAMPLE_PATHS[s_ind])
     
-    def get_random_class_sample(self):
+    def get_target_example(self):
         if self.target_class!=None:
             logging.info("Retrieved a random sample of sound class #%d %s" % (self.target_class, CLASS_NAMES[self.target_class]))
             s_ind = np.random.choice(np.flatnonzero(Y==self.target_class))
@@ -189,8 +189,9 @@ class SearchModel(object):
     def get_learning_data(self):
         I0,I1,Ix = self.get_index_partition()
         # feedback_classed samples
-        print 'feedback indices', I0.nonzero(), I1.nonzero()
-        print 'examples', self.examples.shape, self.example_active
+        #print 'rejected', I0.nonzero()
+        #print "accepted", I1.nonzero()
+        #print 'examples', self.examples.shape, self.example_active
         X1 = np.concatenate((self.examples[self.example_active], X[I1]))    
         X0 = X[I0]
         # unfeedback_classed samples
@@ -214,11 +215,14 @@ class SearchModel(object):
 
     def get_proposals(self, n_proposal):
         I0, I1, Ix = self.get_index_partition()
+        logging.info("Current training data: \n positive: %s \nnegative: %s" % (np.flatnonzero(I1), np.flatnonzero(I0)) )
+        if self.scores==None:
+            raise Exception("No scores available yet. Please run update_scores() first.")
         sort_inds = np.argsort(self.scores)[:-n_proposal-1:-1]  # numpy sort ascendingly; select from back
         # convert to library index
         raw_inds = np.flatnonzero(Ix)[sort_inds]
         #TODO: pass/use scores 
-        logging.info("Proposing %s \n %s" % (raw_inds, LIBSAMPLE_PATHS[raw_inds])) 
+        logging.info("Proposed %s \n%s \n%s \n%s" % (raw_inds, self.scores[sort_inds], Y[raw_inds], LIBSAMPLE_PATHS[raw_inds])) 
         return zip(LIBSAMPLE_PATHS[raw_inds], raw_inds, self.scores[sort_inds])
 
     def get_random_samples(self, n_samples):
