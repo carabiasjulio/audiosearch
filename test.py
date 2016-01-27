@@ -6,7 +6,7 @@ import matplotlib.pyplot as pl
 TRAIN_SIZE = 40
 
 def step(m, proposal_size):
-    m.update_scores(max(2, m.get_trainset_size()/3))
+    m.update_scores(min(3, m.get_trainset_size()))
     proposals = m.get_proposals(proposal_size)
     #print "new proposal classes:", Y[[zip(*proposals)[1]]]
     return proposals

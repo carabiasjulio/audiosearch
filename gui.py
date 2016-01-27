@@ -29,55 +29,34 @@ class SearchFrame(wx.Frame):
         sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(sizer)
 
-        # Task control
-        taskButton = wx.Button(self, label='New Task', size=(80,50))
-        taskButton.Bind(wx.EVT_BUTTON, self.OnNewTask)
-        
-        taskLabel = wx.StaticText(self, label="Target: Not Set", size=(250,-1))
-        self.taskLabel = taskLabel
+        # query panel
+        qsizer = wx.BoxSizer()
+        qbox = wx.StaticBoxSizer(wx.StaticBox(self, label= 'Query examples'))
+        qpanel = QueryPanel(self, model)
+        uploadButton = wx.Button(self, label='upload', size=(70,40))
+        uploadButton.Bind(wx.EVT_BUTTON, qpanel.OnUpload)
+        qbox.Add(uploadButton,flag=wx.TOP|wx.BOTTOM|wx.ALIGN_CENTRE_VERTICAL, border=23)
+        qbox.Add(qpanel,1, flag=wx.EXPAND|wx.ALL, border=2)
 
-        exampleLabel = wx.StaticText(self, label='Example:')
-        examplePane = wx.Panel(self)
-        examplePane.SetBackgroundColour('white')
-        examplePane.SetSizer(wx.BoxSizer())
-        examplePane.SetMinSize((250,80))
-        self.examplePane = examplePane
-
-
-        tsizer = wx.StaticBoxSizer(wx.StaticBox(self, label="Search Task"))
-        tsizer.Add(taskLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        tsizer.Add(exampleLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        tsizer.Add(examplePane, flag=wx.ALIGN_CENTER|wx.ALL|wx.EXPAND, border=5)
-        tsizer.AddStretchSpacer()
-        tsizer.Add(taskButton, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        sizer.Add(tsizer,0, wx.EXPAND|wx.ALL, border=10)
-        
-#        submitButton = wx.Button(self, label='Submit', size=(80,40))
-
-        goButton = wx.Button(self, label='SEARCH', size=(-1,60))
+        qsizer.Add(qbox,1, flag=wx.ALL, border=5)
+        goButton = wx.Button(self, label='SEARCH', size=(80,-1))
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
-        sizer.Add(goButton, flag=wx.CENTER|wx.ALL, border=10)
+        qsizer.Add(goButton,flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
+
+        sizer.Add(qsizer, flag= wx.EXPAND|wx.ALL, border=10)
 
         ### model control
+        kLabel = wx.StaticText(self, label='Number of neighbors:')
         # number of neighbors
-        kChoice = wx.SpinCtrl(self, min=1, max=15, initial=1)
+        kChoice = wx.SpinCtrl(self, min=1, max=12, initial=1)
         self.kChoice = kChoice
-        # distance weighting on neighbors
-        weightingCheck = wx.CheckBox(self, label='distance-weighted')
-        self.weightingCheck = weightingCheck
-        # choice of distance metric
-        metricChoice = wx.Choice(self, choices=['minkowski', 'euclidean', 'manhattan'])
-        self.metricChoice = metricChoice
-
-        self.modelControls = [kChoice, weightingCheck, metricChoice]
-        for control in self.modelControls:
-            control.Disable()
+        kChoice.Disable()
 
         csizer = wx.BoxSizer()
-        csizer.Add(kChoice, flag=wx.ALL, border=5)
-        csizer.Add(weightingCheck, flag=wx.ALL, border=5)
-        csizer.Add(metricChoice, flag=wx.ALL, border=5)
-
+        csizer.AddSpacer(12)
+        csizer.Add(kLabel, flag=wx.ALL|wx.ALIGN_CENTER, border=5)
+        csizer.Add(kChoice, flag=wx.ALL|wx.ALIGN_CENTER, border=5)
+        
         sizer.Add(csizer, flag=wx.EXPAND, border=5)
         #model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
         #modelControl = wx.RadioBox(self, label='Model options', choices=model_options)
@@ -179,12 +158,8 @@ class SearchFrame(wx.Frame):
 
     def OnGo(self, event):
         k = self.kChoice.GetValue()
-        weighted = self.weightingCheck.GetValue()
-        metric = self.metricChoice.GetString(self.metricChoice.GetSelection())
-         
-        #choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
         self.rpanel.DestroyChildren()
-        self.model.update_scores(k, weighted, metric)
+        self.model.update_scores(k)
         self.rpanel.showRanking()
    
    # Feedback event handlers
@@ -197,7 +172,7 @@ class SearchFrame(wx.Frame):
         self.updateKChoice()
 
         if c==0:
-            [control.Enable() for control in self.modelControls]
+            self.kChoice.Enable()
 
     def OnRemoveFeedback(self, event):
         # get sample item
@@ -216,7 +191,7 @@ class SearchFrame(wx.Frame):
 
         if c==0:
             if len(self.model.get_feedback(0))==0:
-                [control.Disable() for control in self.modelControls]
+                self.kChoice.Disable()
         
     def OnClearFeedback(self, event):
         c = event.GetId()
@@ -226,7 +201,7 @@ class SearchFrame(wx.Frame):
         self.updateKChoice()
         if c==0:
             if len(self.model.get_feedback(0))==0:
-                [control.Disable() for control in self.modelControls]
+                self.kChoice.Disable()
 
     def updateFeedbackCount(self, class_label):
         countLabel = self.feedbackCounts[class_label]
@@ -239,6 +214,7 @@ class SearchFrame(wx.Frame):
 
     def updateKChoice(self):
         n = self.model.get_trainset_size()
+        self.kChoice.SetValue(min(3,n))
         self.kChoice.SetRange(1, n)
 
     def OnControl1(self, event):

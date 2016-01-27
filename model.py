@@ -197,7 +197,7 @@ class SearchModel(object):
                 print 'No negative examples. Ranking samples based on distance to positive examples.'
         else:
             c = self.classifier
-            c.n_neighbors = min(12, max(2, k))
+            c.n_neighbors = max(2, k)
             score_func = p_classifier(c)
         self.scores = score_func(X0, X1, L)
         if self.mode:
