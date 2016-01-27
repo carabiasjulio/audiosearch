@@ -104,7 +104,7 @@ def show_centroids(centroids):
     pl.colorbar()
 
 
-def get_features(f):
+def get_features(f, reduced=True):
     """ Feature extraction
     f: string, audio sample file name
     """
@@ -117,7 +117,8 @@ def get_features(f):
     # normalize feature counts to distribution
     normalized = bins/bins.sum()
     # dimension reduction
-    x = normalized[feature_inds]
+    if reduce:
+        x = normalized[feature_inds]
     return x
 
 def waveToLogSpec(w, fs):
