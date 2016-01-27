@@ -29,34 +29,21 @@ class SearchFrame(wx.Frame):
         sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(sizer)
 
-        # Task control
-        taskButton = wx.Button(self, label='New Task', size=(80,50))
-        taskButton.Bind(wx.EVT_BUTTON, self.OnNewTask)
-        
-        taskLabel = wx.StaticText(self, label="Target: Not Set", size=(250,-1))
-        self.taskLabel = taskLabel
+        # query panel
+        qsizer = wx.BoxSizer()
+        qbox = wx.StaticBoxSizer(wx.StaticBox(self, label= 'Query examples'))
+        qpanel = QueryPanel(self, model)
+        uploadButton = wx.Button(self, label='upload', size=(70,40))
+        uploadButton.Bind(wx.EVT_BUTTON, qpanel.OnUpload)
+        qbox.Add(uploadButton,flag=wx.TOP|wx.BOTTOM|wx.ALIGN_CENTRE_VERTICAL, border=23)
+        qbox.Add(qpanel,1, flag=wx.EXPAND|wx.ALL, border=2)
 
-        exampleLabel = wx.StaticText(self, label='Example:')
-        examplePane = wx.Panel(self)
-        examplePane.SetBackgroundColour('white')
-        examplePane.SetSizer(wx.BoxSizer())
-        examplePane.SetMinSize((250,80))
-        self.examplePane = examplePane
-
-
-        tsizer = wx.StaticBoxSizer(wx.StaticBox(self, label="Search Task"))
-        tsizer.Add(taskLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        tsizer.Add(exampleLabel, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        tsizer.Add(examplePane, flag=wx.ALIGN_CENTER|wx.ALL|wx.EXPAND, border=5)
-        tsizer.AddStretchSpacer()
-        tsizer.Add(taskButton, flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        sizer.Add(tsizer,0, wx.EXPAND|wx.ALL, border=10)
-        
-#        submitButton = wx.Button(self, label='Submit', size=(80,40))
-
-        goButton = wx.Button(self, label='SEARCH', size=(-1,60))
+        qsizer.Add(qbox,1, flag=wx.ALL, border=5)
+        goButton = wx.Button(self, label='SEARCH', size=(80,-1))
         goButton.Bind(wx.EVT_BUTTON, self.OnGo)
-        sizer.Add(goButton, flag=wx.CENTER|wx.ALL, border=10)
+        qsizer.Add(goButton,flag=wx.EXPAND|wx.ALIGN_CENTRE_VERTICAL|wx.ALL, border= 10)
+
+        sizer.Add(qsizer, flag= wx.EXPAND|wx.ALL, border=10)
 
         # model control
         model_options = ['mean distance ratio', 'K Nearest Neighbor', 'Naive Bayes']
@@ -122,35 +109,6 @@ class SearchFrame(wx.Frame):
         sizer.Add(lowerSizer, 7, wx.EXPAND)
         sizer.AddSpacer(10)
 
-
-    def OnNewTask(self, event):
-        # Check if current task is completed TODO
-        if not self.model.task_completed():
-            dlg = wx.MessageDialog(self, 'The current task is not completed yet. Are you sure you want to quit?', 'Current task not completed')
-            r = dlg.ShowModal()
-            dlg.Destroy()
-            if r!=wx.ID_OK:
-                return
-
-        # prompt user to choose target class
-        dialog = wx.SingleChoiceDialog(self, "Choose a target sound to search","Choose search target", choices = CLASS_NAMES)
-        dialog.ShowModal()
-        choice = dialog.GetSelection()
-        dialog.Destroy()
-
-        # update model
-        self.model.set_target_class(choice)
-        
-        # update taskLabel
-        self.taskLabel.SetLabel("Target: %s" % CLASS_NAMES[choice])
-
-        s_ind, sampleFile = self.model.get_target_example()
-        self.examplePane.DestroyChildren()
-        sizer = self.examplePane.GetSizer()
-        sizer.Add(SampleItem(self.examplePane, self.model, sampleFile), 0,flag=wx.ALIGN_CENTER|wx.ALL, border=5)
-        sizer.Layout()
-
-        self.rpanel.DestroyChildren()
 
     def OnGo(self, event):
         choice = model.SCORE_FUNCS[self.modelControl.GetSelection()]
@@ -248,7 +206,7 @@ class RankPanel(wx.ScrolledWindow):
         self.SetSizer(sizer)
         self.SetScrollRate(1,1)
         self.SetBackgroundColour('white')
-#        self.showRanking()
+        #self.showRanking()
 
     def showRanking(self, batchsize = 5):
         """ batchsize: number of results to load each time/page """

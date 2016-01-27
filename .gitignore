@@ -2,6 +2,7 @@ data/
 *~
 *.pyc
 *swp
+*.npy
 *.ipynb
 .ipynb_checkpoints*
 # Compiled source #
