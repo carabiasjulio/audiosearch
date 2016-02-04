@@ -10,4 +10,4 @@ How to run:
 1. cd to top level directory
 2. run python gui.py username
 
-Note: Due to copyright issue, the original audio of UrbanSound8K dataset is not uploaded. The code can still be run, except that audio cannot be displayed. 
+Note: Due to copyright issue, the original audio of UrbanSound8K dataset is not uploaded. The code can still be run, except that audio cannot be played. 
