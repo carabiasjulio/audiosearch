@@ -1,0 +1,1367 @@
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-04.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-10.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves4-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-25.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-11.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro_2.5Seg_10.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/66637__bonehead__crying-baby-merged-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-33.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/anahel_manos_2.5Seg_13_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-15.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-06.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/krus_llaves-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-38.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/karina_tecleado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-14.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_5-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-29.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/karina_tecleado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150310_141013-tocandoPuertaStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-17.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-19.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-20.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_4.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/karina_llaves-2_2.5Seg_1_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_203856-timbre-03.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-37.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/osvaldo_dientes_1.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/YouTube - Baby crying_1_2.5seg_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-39.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/78953__bsung88__washing-hands_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-07.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/karina_llaves-2_2.5Seg_1_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/14853__reinsamba__cricket-uxmal_2_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_175227-flushing.wav
+data/sonidosSubir/allSounds/testdataothers/manos/karina_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/hija_dientes_2.5Seg_9_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-13.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-32.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/80601__severaltimes__janglingkeys_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-29.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_194829-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/hija_llaves11-1_2.5Seg_1_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_095315-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-40.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_9.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/hija_manos2_2.5Seg_1_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-03.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/jessi_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves__8.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-27.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves7-01.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/osvaldo_dientes_0.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/karina_dientes_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-15.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-01.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-09.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_5.wav
+data/sonidosSubir/allSounds/testdataweb/balon/krus_balon-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150305_203701-showerStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-24.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-32.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-22.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-02.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-05.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/86240__robinhood76__01420-rude-baby-girl-2-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/hija_manos2_2.5Seg_1_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-37.wav
+data/sonidosSubir/allSounds/testdataothers/manos/osvaldo_manos_0.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_8.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_2.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/66637__bonehead__crying-baby-merged-01.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-09.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi2_balon-04.wav
+data/sonidosSubir/allSounds/testdataothers/manos/jessi_manos2-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_5.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/66637__bonehead__crying-baby-merged-03.wav
+data/sonidosSubir/allSounds/testdataothers/balon/krus_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150303_220833-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-41.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/61262__robinhood76__00435-baby-crying-long-2-cut_2_5seg_1_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-06.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-27.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-06.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_3-04.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-04.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/jessi_manos_2.5Seg_3_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/YouTube - Keys jangling sound effect_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-19.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_5-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-03.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_8.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-32.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-34.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-29.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-08.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro_2.5Seg_10.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-19.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/anahel_llaves-9_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_203856-timbre-02.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/165389__ultradust__washing-hands-in-a-city-office-restroom_3_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-02.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/krus_dientes_2.5Seg_9_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-29.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_174100-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-16.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-39.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/osvaldo_manos_2.5Seg_2_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/allSounds/testdataweb/balon/karina_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-04.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro2-06.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_3-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-02.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_15.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-02.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/osvaldo_tecleado-03.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-09.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/karina_dientes_4.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-31.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/hija_llaves11-1_2.5Seg_1_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/osvaldo_tecleado-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/anahel_llaves-9_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150310_142747-biciStream.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-16.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/78953__bsung88__washing-hands_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-36.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/krus_dientes_1.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves2-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-27.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-09.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/grillo_1_2.5Seg_28_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-07.wav
+data/sonidosSubir/allSounds/testdataweb/balon/krus_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150305_165834-licuadora-stream.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-06.wav
+data/sonidosSubir/allSounds/testdataweb/manos/jessi_manos2-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/82497__robinhood76__01319-baby-girl-cries-7_4_2.5seg_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-14.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi_balon-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-21.wav
+data/sonidosSubir/allSounds/testdataothers/balon/karina_balon-02.wav
+data/sonidosSubir/allSounds/testdataothers/manos/karina_manos_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_203856-timbre-04.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-02.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/osvaldo_tecleado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-22.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/eduardo_tecleado_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi2_balon-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/YouTube - Baby crying_1_2.5seg_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150303_144609-bici-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/YouTube - Cricket sound effect (2)_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202603-tosido-04.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-42.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-03.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-05.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/karina_dientes_1.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_5-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_214226-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-02.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/krus_dientes_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-06.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/osvaldo_tecleado-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-01.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-25.wav
+data/sonidosSubir/allSounds/testdataweb/manos/krus_manos_0.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves8-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-31.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-26.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/YouTube - Sound-Effects - Brushing Teeth_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-15.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-19.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-28.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-07.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-10.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/86240__robinhood76__01420-rude-baby-girl-2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-04.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/krus_teclado-04.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-08.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_7.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-39.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-01.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/karina_llaves-04.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150311_062618-flushing.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/karina_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-07.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/jessie_dientes_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-17.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro3-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-37.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150303_220833-02.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/YouTube - cricket singing_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_9.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_8.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-07.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/grillo_cerro_2.5Seg_10_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/31532__erdie__baby8-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-09.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/55107__noisecollector__basketball2_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/osvaldo_dientes_2.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-10.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/osvaldo_dientes_1.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/krus_teclado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-23.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-19.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/osvaldo_manos_2.5Seg_2_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/99201__tomlija__indoor-basketball-game_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-24.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_2.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/jessi_manos_2.5Seg_3_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro3-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-19.wav
+data/sonidosSubir/allSounds/testdataothers/manos/krus_manos_0.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_3-09.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-02.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-01.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-12.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/grillo_cerro_2.5Seg_10_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/anahel_manos_2.5Seg_13_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-07.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-11.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-29.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-40.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/osvaldo_dientes_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-28.wav
+data/sonidosSubir/allSounds/testdataweb/manos/krus_manos_1.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/grillo_c12_2.5Seg_12_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_162704-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-22.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-27.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-19.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/krus_llaves-04.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/31532__erdie__baby8-02.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-10.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/osvaldo_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150311_203604-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/eduardo_tecleado_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/42393__maarten-wez__me-typing_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro_2.5Seg_7.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-03.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-06.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_3-08.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-10.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-41.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi_balon-03.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/66637__bonehead__crying-baby-merged-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-18.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/23388__ljudman__keyboardmouse_4_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-03.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-20.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150312_181835-flushingStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_174910-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/grillo_c12_2.5Seg_12_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/165389__ultradust__washing-hands-in-a-city-office-restroom_3_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_8.wav
+data/sonidosSubir/allSounds/testdataothers/manos/osvaldo_manos_3.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/60083__robinhood76__00319-give-me-more-milk-1_4_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/osvaldo_dientes_3.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/jessi_balon_2.5Seg_9_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-36.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/karina_llaves-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-23.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/hija_tecleado_2.5Seg_3_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-32.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/YouTube - Cricket sound effect (2)_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/manos/jessie_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-35.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-15.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150305_211734-flushing.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro3-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-24.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-16.wav
+data/sonidosSubir/allSounds/testdataothers/manos/krus_manos_3.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-35.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/42966__mattew__cleaning_teeth_4_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-30.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-22.wav
+data/sonidosSubir/allSounds/testdataweb/manos/osvaldo_manos_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150305_201533-aspiradoraStream.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/42393__maarten-wez__me-typing_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/anahel_llaves-9_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-20.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/99201__tomlija__indoor-basketball-game_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-36.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/61262__robinhood76__00435-baby-crying-long-2-cut_2_5seg_1_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/jessi_tecleado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/YouTube - Sound Baby crying (Bebe llorando)_1_2.5seg_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/60083__robinhood76__00319-give-me-more-milk-1-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-32.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_225548-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-21.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/jessi_manos_2.5Seg_3_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150313_142452-timbreStream.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/80601__severaltimes__janglingkeys_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_9.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-22.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-31.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-21.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-23.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-16.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/krus_llaves-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-17.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-08.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-03.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-07.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-24.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-09.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_5-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/anahel_balon2_2.5Seg_5_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-19.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-22.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/YouTube - Touch type of Happy Hacking Keyboard 2_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/jessi2_balon_2.5Seg_4_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/YouTube - Keys jangling sound effect_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/eduardo_tecleado_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-07.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/krus_dientes_2.5Seg_9_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/manos/karina_manos_3.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/YouTube - Keys jangling sound effect_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150303_144609-bici-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/jessi_dientes_2.5Seg_6_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_4.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/anahel_llaves-9_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150304_062626-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-15.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/42966__mattew__cleaning_teeth_4_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_7.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-08.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-09.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/60083__robinhood76__00319-give-me-more-milk-1_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-07.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/14853__reinsamba__cricket-uxmal_2_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-21.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-22.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi_balon-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/61262__robinhood76__00435-baby-crying-long-2-cut_2_5seg_1_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_084430-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/grillo_c12_2.5Seg_12_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-11.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/60083__robinhood76__00319-give-me-more-milk-1-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/krus_llaves-2_2.5Seg_1_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-23.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/31532__erdie__baby8-02.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/42966__mattew__cleaning_teeth_4_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi_balon-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150306_104045-flushing.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/60083__robinhood76__00319-give-me-more-milk-1-03.wav
+data/sonidosSubir/allSounds/testdataweb/balon/krus_balon-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_175201-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-06.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/YouTube - Sound Basketball bounce (Pelota de baloncesto)_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-03.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-42.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-01.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-02.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/karina_dientes_2.5Seg_4.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/YouTube - Baby crying_1_2.5seg_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/allSounds/testdataweb/manos/krus_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-11.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-04.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_3-09.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/YouTube - Sound-Effects - Brushing Teeth_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-16.wav
+data/sonidosSubir/allSounds/testdataweb/balon/karina_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-20.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/karina_tecleado-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150310_140837-tosidoStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-11.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/krus_dientes_2.5Seg_9_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/jessi_manos_2.5Seg_3_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-13.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-04.wav
+data/sonidosSubir/allSounds/testdataothers/manos/karina_manos_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-19.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/anahel_balon2_2.5Seg_5_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-40.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-31.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/krus_teclado_2.5Seg_7_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_0.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-02.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-23.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-32.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/31532__erdie__baby8-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-13.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/anahel_manos_2.5Seg_13_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/karina_dientes_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-06.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-07.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_203856-timbre-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-07.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro2-06.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/karina_dientes_3.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/60083__robinhood76__00319-give-me-more-milk-1_4_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_075021-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-24.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-12.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-22.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves2-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/hija_llaves11-1_2.5Seg_1_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/60083__robinhood76__00319-give-me-more-milk-1-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-10.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-07.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_150308-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-04.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/jessie_dientes_0.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/60083__robinhood76__00319-give-me-more-milk-1_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-30.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-20.wav
+data/sonidosSubir/allSounds/testdataweb/manos/karina_manos_0.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-28.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-10.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-21.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_111550-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-11.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/86240__robinhood76__01420-rude-baby-girl-2-03.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_5.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-05.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_5.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-33.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-27.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/anahel_balon2_2.5Seg_5_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/jessi_tecleado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-02.wav
+data/sonidosSubir/allSounds/testdataothers/manos/karina_manos_1.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-02.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-01.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/60083__robinhood76__00319-give-me-more-milk-1-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-16.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-07.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-06.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-19.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-20.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/karina_tecleado-01.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-39.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-09.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/61534__cognito-perceptu__brushing-teeth_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150313_095747-aguaHirviensoStream.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/14853__reinsamba__cricket-uxmal_2_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-05.wav
+data/sonidosSubir/allSounds/testdataothers/balon/krus_balon-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/anahel_balon2_2.5Seg_5_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/23388__ljudman__keyboardmouse_4_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-38.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/grillo_1_2.5Seg_28_mw_eduardo_dientes_2.5Seg_9_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-34.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/jessi_dientes_2.5Seg_6_mw_jessi_tecleado_2.5Seg_4_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-34.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_5.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150305_135917-lavadora-stream.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/krus_teclado_2.5Seg_7_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_5.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/YouTube - Touch type of Happy Hacking Keyboard 2_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-34.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-19.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/grillo_c12_2.5Seg_12_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-06.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-30.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-28.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/YouTube - Sound Basketball bounce (Pelota de baloncesto)_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150227_193109-flushing-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-11.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-05.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/osvaldo_dientes_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-01.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-09.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-18.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves9-01.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/jessie_dientes_1.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves-01.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/86240__robinhood76__01420-rude-baby-girl-2-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-11.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-30.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/55107__noisecollector__basketball2_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro_2.5Seg_7.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-12.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/hija_tecleado_2.5Seg_3_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/80601__severaltimes__janglingkeys_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150303_144609-bici-01.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-14.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-01.wav
+data/sonidosSubir/allSounds/testdataweb/manos/krus_manos_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-05.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/jessi_tecleado-02.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_2.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/osvaldo_manos_2.5Seg_2_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-40.wav
+data/sonidosSubir/allSounds/testdataweb/manos/jessi_manos2-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-31.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-08.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-05.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro2-03.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-07.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/krus_dientes_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-18.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/grillo_cerro_2.5Seg_10_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-03.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-07.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/66637__bonehead__crying-baby-merged-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-11.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/55107__noisecollector__basketball2_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves10-01.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-18.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/60083__robinhood76__00319-give-me-more-milk-1_4_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-10.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/42393__maarten-wez__me-typing_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150306_084455-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-22.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-03.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-08.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_24.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_092153-flushing.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/86240__robinhood76__01420-rude-baby-girl-2-02.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-07.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/31532__erdie__baby8-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-10.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves2-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150305_163728-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-28.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150303_220833-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/60083__robinhood76__00319-give-me-more-milk-1_4_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-19.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/165389__ultradust__washing-hands-in-a-city-office-restroom_3_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150303_144609-bici-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-24.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/61534__cognito-perceptu__brushing-teeth_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves2-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150311_200732-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/jessi2_balon_2.5Seg_4_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-12.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/krus_teclado_2.5Seg_7_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-12.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/60083__robinhood76__00319-give-me-more-milk-1-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves2-01.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-16.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-14.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_1.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-12.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-10.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/karina_tecleado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-24.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/manos/hija_manos2_2.5Seg_1_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-09.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/grillo_1_2.5Seg_28_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-04.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_5-01.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi2_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-30.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/61534__cognito-perceptu__brushing-teeth_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-13.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/karina_dientes_2.5Seg_4.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/jessi_balon_2.5Seg_9_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150313_144742-guisandoStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-06.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-13.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/krus_dientes_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-07.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro3-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/14853__reinsamba__cricket-uxmal_2_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-19.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-18.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/krus_llaves-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/78953__bsung88__washing-hands_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/jessi2_balon_2.5Seg_4_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/86240__robinhood76__01420-rude-baby-girl-2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-28.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-08.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro3-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-13.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/karina_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_203856-timbre-05.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-03.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/krus_teclado-03.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-06.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/jessi_tecleado-04.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-15.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-32.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/osvaldo_tecleado-01.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_142522-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_2.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-08.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-12.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llaves/karina_llaves-2_2.5Seg_1_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-08.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/jessie_dientes_0.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203459-shower-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/hija_llaves11-1_2.5Seg_1_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150227_193109-flushing-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-31.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-11.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_3-08.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-13.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/krus_llaves-2_2.5Seg_1_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-09.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-22.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-11.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro3-03.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/krus_dientes_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-28.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_7.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-02.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202603-tosido-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-07.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-13.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_9.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-13.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/krus_llaves-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202603-tosido-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-40.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-17.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/42966__mattew__cleaning_teeth_4_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_10dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-06.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/grillo/YouTube - cricket singing_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/karina_llaves-2_2.5Seg_1_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llaves/YouTube - Keys jangling sound effect_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-20.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/YouTube - Sound-Effects - Brushing Teeth_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/osvaldo_manos_2.5Seg_2_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/karina_dientes_4.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-10.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-05.wav
+data/sonidosSubir/allSounds/testdataweb/manos/karina_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150311_060631-flushing.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/jessi_tecleado-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_185106-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150303_220833-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-02.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-21.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-19.wav
+data/sonidosSubir/allSounds/testdataweb/manos/jessi_manos2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-30.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/krus_dientes_2.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_9.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-05.wav
+data/sonidosSubir/allSounds/testdataweb/manos/osvaldo_manos_3.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/krus_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_162811-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-20.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-02.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/31532__erdie__baby8-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-19.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-29.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/66637__bonehead__crying-baby-merged-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-14.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-09.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-35.wav
+data/sonidosSubir/allSounds/testdataothers/manos/krus_manos_2.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/manos/165389__ultradust__washing-hands-in-a-city-office-restroom_3_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-17.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/karina_llaves-02.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-06.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-34.wav
+data/sonidosSubir/allSounds/testdataweb/manos/karina_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-02.wav
+data/sonidosSubir/allSounds/testdataweb/manos/osvaldo_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-07.wav
+data/sonidosSubir/allSounds/testdataothers/manos/jessi_manos2-03.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/31532__erdie__baby8-03.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/krus_llaves-2_2.5Seg_1_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-09.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-19.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/balon/jessi_balon_2.5Seg_9_mw_jessi_tecleado_2.5Seg_4_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-35.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_171235-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-09.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/66637__bonehead__crying-baby-merged-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/hija_tecleado_2.5Seg_3_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-02.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-07.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_0.wav
+data/sonidosSubir/allSounds/testdataweb/balon/karina_balon-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_4.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-34.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-30.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/karina_tecleado-03.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-08.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi2_balon-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_175250-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-13.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/grillo_cerro_2.5Seg_10_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_175136-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/55107__noisecollector__basketball2_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-29.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-09.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/86240__robinhood76__01420-rude-baby-girl-2-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/23388__ljudman__keyboardmouse_4_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-28.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/osvaldo_tecleado-02.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-03.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves6-01.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/osvaldo_dientes_3.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/osvaldo_tecleado-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150227_193109-flushing-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_0.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_8.wav
+data/sonidosSubir/allSounds/testdataothers/manos/osvaldo_manos_2.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/tecleado/42393__maarten-wez__me-typing_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-01.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-09.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_17.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-15.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-06.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-05.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/60083__robinhood76__00319-give-me-more-milk-1-04.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves3-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-14.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-01.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/krus_teclado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150227_193109-flushing-01.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_7.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-35.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_8.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-09.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-10.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-27.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves2-03.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/jessi_dientes_2.5Seg_6_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro3-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-06.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-06.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/31532__erdie__baby8-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/YouTube - Sound Baby crying (Bebe llorando)_1_2.5seg_mw_krus_balon_2.5Seg_2_2dB.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/karina_tecleado-04.wav
+data/sonidosSubir/allSounds/testdataothers/balon/krus_balon-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_1.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-10.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_6.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_204957-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-11.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S1/anahel_llaves_3.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_5-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-15.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/krus_dientes_0.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/YouTube - Sound Baby crying (Bebe llorando)_1_2.5seg_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-37.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llanto/61262__robinhood76__00435-baby-crying-long-2-cut_2_5seg_1_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/YouTube - Touch type of Happy Hacking Keyboard 2_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-10.wav
+data/sonidosSubir/allSounds/testdataweb/balon/krus_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-24.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/eduardo_tecleado_2.5Seg_1_mw_eduardo_dientes_2.5Seg_9_2dB.wav
+data/sonidosSubir/allSounds/testdataweb/manos/osvaldo_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-17.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150303_220833-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150303_144609-bici-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-17.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-24.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S4/82497__Robinhood76__01319_baby_girl_cries_7-11.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/hija_dientes_2.5Seg_9_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/hija_tecleado_2.5Seg_3_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-37.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-04.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/jessi_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-01.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi2_balon-01.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-05.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi2_balon-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-37.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-23.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150313_164518-streamSecadora.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-38.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-09.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-36.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-36.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202343-tosido-01.wav
+data/sonidosSubir/allSounds/testdataothers/balon/karina_balon-03.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-08.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_5-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-21.wav
+data/sonidosSubir/allSounds/testdataweb/balon/karina_balon-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/balon/YouTube - Sound Basketball bounce (Pelota de baloncesto)_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-09.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/tecleado/23388__ljudman__keyboardmouse_4_2.5seg_mw_13802__pfly__babycry03_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-06.wav
+data/sonidosSubir/allSounds/testdataothers/balon/karina_balon-01.wav
+data/sonidosSubir/allSounds/testdataothers/balon/karina_balon-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-39.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-27.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/jessi_tecleado-02.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/krus_dientes_3.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_2.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202603-tosido-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-20.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/YouTube - Baby crying_1_2.5seg_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-08.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/jessie_dientes_3.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204523-tocandoPuerta-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-20.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-39.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-03.wav
+data/sonidosSubir/allSounds/testdataothers/manos/jessie_manos_2.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-10.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150220_100052-lavadora-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-21.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-13.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_1.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/krus_teclado-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150306_195204-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-12.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/jessi_balon_2.5Seg_9_mw_jessi_tecleado_2.5Seg_4_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-33.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/YouTube - cricket singing_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/grillo/YouTube - cricket singing_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/YouTube - Sound-Effects - Brushing Teeth_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150305_203219-dientesStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-01.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_5-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-18.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi_balon-02.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/78953__bsung88__washing-hands_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-07.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llaves/80601__severaltimes__janglingkeys_1_2.5seg_mw_13802__pfly__babycry03_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_4.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150305_205021-guisando-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/stew/20150223_171832-guisando-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/YouTube - Cricket sound effect (2)_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150312_103755-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-08.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_3-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_202343-tosido-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-29.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S2/eduardo_tecleado-09.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S2/33669__reinsamba__baby_crying_1-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/60083__robinhood76__00319-give-me-more-milk-1_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-08.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/grillo/YouTube - Cricket sound effect (2)_1_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S1/26760__zerolagtime__baby_crying1-04.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves1-01.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/jessie_dientes_2.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/balon/99201__tomlija__indoor-basketball-game_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-14.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-38.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/60083__robinhood76__00319-give-me-more-milk-1-02.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S2/eduardo_dientes-08.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S4/santos_manos_10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/YouTube - Sound Basketball bounce (Pelota de baloncesto)_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_20dB.wav
+data/sonidosSubir/allSounds/testdataothers/manos/osvaldo_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-05.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/karina_llaves-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-05.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S1/grillo_1-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-08.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S4/santos_balon-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150306_212533-shower-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-14.wav
+data/sonidosSubir/allSounds/testdataothers/llanto/86240__robinhood76__01420-rude-baby-girl-2-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-35.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-27.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-03.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/karina_llaves-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/dientes/61534__cognito-perceptu__brushing-teeth_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/dientes/jessie_dientes_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150310_140628-lavandoTrastesStream.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S1/anahel_dientes-04.wav
+data/sonidosSubir/allSounds/testdataothers/balon/krus_balon-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150227_194510-timbre-11.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-06.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-16.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S1/anahel_balon2-01.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves_4.wav
+data/sonidosSubir/allSounds/testdataclean/llanto/S3/58741__Robinhood76__00255_baby_crying_long_1-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-08.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/krus_llaves-01.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_cerro2-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/tecleado/krus_teclado_2.5Seg_7_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-32.wav
+data/sonidosSubir/allSounds/testdataweb/balon/jessi2_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-34.wav
+data/sonidosSubir/allSounds/testdataothers/dientes/jessie_dientes_3.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-12.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150311_014547-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/llaves/krus_llaves-2_2.5Seg_1_mw_krus_balon_2.5Seg_2_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-18.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-06.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/llanto/82497__robinhood76__01319-baby-girl-cries-7_4_2.5seg_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-02.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/karina_llaves-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-08.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-38.wav
+data/sonidosSubir/allSounds/testdataothers/grillo/grillo_3-04.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/hija_dientes_2.5Seg_9_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-19.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-31.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/dientes/hija_dientes_2.5Seg_9_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-36.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-17.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/jessi2_balon_2.5Seg_4_mw_grillo_3_2.5Seg_1_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203508-shower-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/manos/hija_manos2_2.5Seg_1_mw_grillo_3_2.5Seg_1_10dB.wav
+data/sonidosSubir/allSounds/testdataweb/grillo/grillo_cerro3-04.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-25.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-35.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S3/hija_manos_9.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-09.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/jessi_llaves2-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-16.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-21.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S2/eduardo_llaves__7.wav
+data/sonidosSubir/Ambient Assisted app sounds/boilingWater/20150305_195121-aguaHirviendo-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingDishes/20150219_152604-lavandotrastes-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/knockingDoor/20150305_204355-tocandoPuerta-18.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/krus_teclado-03.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/60083__robinhood76__00319-give-me-more-milk-1_2_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150305_203459-shower-01.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/tecleado/YouTube - Touch type of Happy Hacking Keyboard 2_1_2.5seg_mw_YouTube - Washing Hands Sound Effect_1_2.5seg_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-12.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/karina_llaves-01.wav
+data/sonidosSubir/allSounds/testdataweb/tecleado/krus_teclado-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/bike/20150227_193806-bici-11.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/manos/anahel_manos_2.5Seg_13_mw_eduardo_dientes_2.5Seg_9_20dB.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S1/anahel_tecleado-03.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-17.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S1/anahel_manos_4.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoSilencio/20150312_071823-fondoSilencio-15.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-07.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-17.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-14.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S3/hija_tecleado-07.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/82497__robinhood76__01319-baby-girl-cries-7_4_2.5seg_mw_grillo_3_2.5Seg_1_5dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-19.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-08.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-02.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/llanto/82497__robinhood76__01319-baby-girl-cries-7_4_2.5seg_mw_grillo_3_2.5Seg_1_2dB.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S3/hija_balon-09.wav
+data/sonidosSubir/allSounds/testdataothers/balon/jessi2_balon-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/toothBrushing/20150305_202859-dientes-30.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/dientes/krus_dientes_2.5Seg_9_mw_krus_balon_2.5Seg_2_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/streams/20150313_142618-telcasaStream.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150305_170443-13.wav
+data/sonidosSubir/allSounds/testdataclean/tecleado/S4/santos_tecleado-01.wav
+data/sonidosSubir/allSounds/testdataothers/llaves/jessi_llaves-04.wav
+data/sonidosSubir/allSounds/testdataothers/manos/krus_manos_1.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150227_194243-tosido-14.wav
+data/sonidosSubir/allSounds/testdataclean/balon/S2/eduardo_balon-10.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S3/hija_llaves5-01.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S3/hija_dientes-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150309_093617-flushing.wav
+data/sonidosSubir/allSounds/testdataclean/llaves/S4/santos_llaves-01.wav
+data/sonidosSubir/allSounds/testdataweb/llanto/66637__bonehead__crying-baby-merged-02.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S4/grillo_ry-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/cough/20150305_201931-tosido-03.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S2/grillo_2-04.wav
+data/sonidosSubir/allSounds/testdataclean/dientes/S4/santos_dientes_9.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix2/dientes/jessi_dientes_2.5Seg_6_mw_jessi_tecleado_2.5Seg_4_2dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-05.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix20/balon/99201__tomlija__indoor-basketball-game_3_2.5seg_mw_157916__lolamadeus__keys-jangling-then-dropped_3_2.5seg_20dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150305_165704-liuadora-13.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150305_234602-flushing.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix10/grillo/grillo_1_2.5Seg_28_mw_eduardo_dientes_2.5Seg_9_10dB.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-38.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150305_204046-tel-08.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_3.wav
+data/sonidosSubir/allSounds/testdataothers/tecleado/krus_teclado-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/doorBell/20150305_165314-timbre-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/washingMachine/20150224_135241-lavadora-31.wav
+data/sonidosSubir/allSounds/testdataclean/grillo/S3/grillo_c12-05.wav
+data/sonidosSubir/Ambient Assisted app sounds/vaccum/20150305_201239-aspiradora-26.wav
+data/sonidosSubir/Ambient Assisted app sounds/dyerMachine/20150218_175445-secadora-14.wav
+data/sonidosSubir/allSounds/testdataothers/manos/jessi_manos2-01.wav
+data/sonidosSubir/Ambient Assisted app sounds/shower/20150227_194123-shower-04.wav
+data/sonidosSubir/allSounds/testdataclean/manos/S2/eduardo_manos_0.wav
+data/sonidosSubir/Ambient Assisted app sounds/blender/20150227_193606-licuadora-10.wav
+data/sonidosSubir/allSounds/testdatamixed/wavs-mix5/llanto/YouTube - Sound Baby crying (Bebe llorando)_1_2.5seg_mw_krus_balon_2.5Seg_2_5dB.wav
+data/sonidosSubir/allSounds/testdataweb/llaves/krus_llaves-02.wav
+data/sonidosSubir/Ambient Assisted app sounds/tel/20150227_194718-telcasa-15.wav
+data/sonidosSubir/Ambient Assisted app sounds/flushing/20150310_105454-flushing.wav
+data/sonidosSubir/Ambient Assisted app sounds/fondoTranquilo/20150310_074356-fondoTranquilo-03.wav

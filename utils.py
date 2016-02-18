@@ -55,11 +55,11 @@ def extract_dataset(dataset_name):
 dataset = 'UrbanSound8K' 
 print 'Dataset:', dataset
 
-X = np.load(dataset+'.npy')
+X = np.load(os.path.join('features',dataset+'.npy'))
 N,D = X.shape
-with open(dataset+'.txt') as f:
+with open(os.path.join('features', dataset+'.txt')) as f:
     LIBSAMPLE_PATHS = np.array( ''.join(f.readlines()).split('\n'))
-Y = np.load(dataset+'_Y.npy')
+Y = np.load(os.path.join('features', dataset+'_Y.npy'))
 CLASS_NAMES = ["air conditioner", "car horn", "children playing", "dog bark", "drilling", "engine idling", "gun shot", "jackhammer", "siren", "street music"]
 
 def get_random_libsample():
@@ -91,10 +91,10 @@ def play_sample(i):
 NC = 512	# number of features (centroids)
 quantizer = vq.VectorQuantizer(clusterer=hartigan.HartiganOnline(n_clusters=NC))
 # load trained quantizer
-centroids = np.load('/home/mzhan/audiosearch/centroids151209.npy')
+centroids = np.load(os.path.join('features', 'centroids151209.npy'))
 quantizer.load_centroids(centroids[0,7])
 # use only a subset of features
-feature_inds = np.load('feature_inds.npy')
+feature_inds = np.load(os.path.join('features', 'feature_inds.npy'))
 
 
 def show_centroids(centroids):

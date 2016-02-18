@@ -320,7 +320,7 @@ class SampleItem(wx.Panel):
         sizer = wx.BoxSizer()
         self.model = model
 
-        self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('play_s.png'))   #TODO: shrink button size
+        self.playButton = wx.BitmapButton(self, bitmap = wx.Bitmap('img/play_s.png'))   #TODO: shrink button size
         self.playButton.Bind(wx.EVT_BUTTON, self.OnPlay)
         
         label = wx.StaticText(self, label= os.path.split(sampleFile)[-1], size=(140,-1))
@@ -346,11 +346,11 @@ class SampleItem(wx.Panel):
             print f 
             data, fs = sf.read(f)
             sd.play(data, fs, do_after = self.AfterPlay)    # new thread, with 
-            self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('stop_s.png'))
+            self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('img/stop_s.png'))
             self.playing = True
 
     def AfterPlay(self):
-        self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('play_s.png'))
+        self.playButton.SetBitmapLabel(bitmap = wx.Bitmap('img/play_s.png'))
         self.playing = False        
 
        
@@ -391,9 +391,9 @@ class ProposedSampleItem(SampleItem):
         self.sample_index = s_ind
         self.score = score
 
-        yesButton = wx.BitmapButton(self, id=ID_accept, bitmap=wx.Bitmap('yes.png'))
+        yesButton = wx.BitmapButton(self, id=ID_accept, bitmap=wx.Bitmap('img/yes.png'))
         yesButton.Bind(wx.EVT_BUTTON, self.OnYes)
-        noButton = wx.BitmapButton(self, id=ID_reject, bitmap=wx.Bitmap('no.png'))
+        noButton = wx.BitmapButton(self, id=ID_reject, bitmap=wx.Bitmap('img/no.png'))
         noButton.Bind(wx.EVT_BUTTON, self.OnNo)
         bsizer = wx.BoxSizer()
         bsizer.Add(yesButton, flag=wx.ALIGN_CENTER_VERTICAL|wx.TOP|wx.BOTTOM, border=5)
