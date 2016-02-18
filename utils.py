@@ -50,9 +50,9 @@ def extract_dataset(dataset_name):
     return X
 
 # Load library
-datasets = os.listdir('data')
-dataset_choice = 3 
-dataset = datasets[dataset_choice]
+#datasets = os.listdir('data')
+#dataset_choice = 3 
+dataset = 'UrbanSound8K' 
 print 'Dataset:', dataset
 
 X = np.load(dataset+'.npy')
