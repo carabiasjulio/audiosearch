@@ -11,8 +11,8 @@ package dependencies:
 - soundfile https://github.com/bastibe/PySoundFile
 
 data package installation:
-1. Download UrbanSound8K.tar.gz from https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html;
-2. Extract the gz file under the directory 'data'.
+1. Download UrbanSound8K.tar.gz from https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html
+2. Extract the tar.gz file under directory 'data'.
 
 How to run: 
 1. cd to top level directory
